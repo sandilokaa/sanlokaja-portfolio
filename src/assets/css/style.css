@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D5FF3F;
+}
+
+:root{
+    --title-font: 'Stretch Pro', sans-serif;
+}
+
+/* ====================================================== */
+
+/* ---------- Navbar ---------- */
+
+.navbar{
+    padding: 10px 0;
+    height: 90px;
+}
+
+.nav-link{
+    font-size: 18px;
+    margin-left: 48px;
+    color: #101010;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.nav-link:hover{
+    color: #101010;
+}
+
+/* ---------- End Navbar ---------- */
+
+/* ====================================================== */
+
+
+
+/* ====================================================== */
+
+/* ---------- Header ---------- */
+
+#header-my-portfolio{
+    margin: 10% 0;
+}
+
+#header-my-portfolio h4{
+    font-family: var(--title-font);
+    margin: auto 0;
+}
+
+#header-my-portfolio .row-header-title .header-title{
+    margin: 1% 0 0;
+}
+
+#header-my-portfolio .row-header-title p{
+    font-size: 7.2rem;
+    font-family: var(--title-font);
+    margin: auto 0;
+}
+
+#header-my-portfolio .row-header-title .header-image{
+    margin: auto 0;
+}
+
+#header-my-portfolio .row-header-title img{
+    height: 80px;
+    width: 100%;
+}
+
+#header-my-portfolio .row-header-title-2 p{
+    font-size: 7.2rem;
+    font-family: var(--title-font);
+    margin: auto 0;
+}
+
+#header-my-portfolio .row-header-greeting p{
+    font-size: 1.25rem;
+    margin: auto 0;
+    font-weight: 500;
+}
+
+#header-my-portfolio .row-header-greeting .header-complete-projects h3{
+    font-size: 2.7rem;
+    font-family: var(--title-font);
+}
+
+#header-my-portfolio .row-header-greeting .header-years-experience h3{
+    font-size: 2.7rem;
+    font-family: var(--title-font);
+}
+
+#header-my-portfolio .row-header-button{
+    margin: 3% 0;
+    padding: 0;
+}
+
+#header-my-portfolio .row-header-button .horizontal-line{
+    margin: auto 0;
+}
+
+#header-my-portfolio .row-header-button hr{
+    width: 104%;
+    margin-left: -1.8%;
+}
+
+#header-my-portfolio .row-header-button button{
+    width: 104%;
+    padding: 4.4% 0;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: #101010 solid 1px;
+    color: #101010;
+    transition: 0.3s all ease-in-out;
+}
+
+#header-my-portfolio .row-header-button button:hover{
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+/* ---------- End Header ---------- */
+
+/* ====================================================== */
