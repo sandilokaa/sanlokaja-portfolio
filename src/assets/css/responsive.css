@@ -1,0 +1,85 @@
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    /* ====================================================== */
+
+    /* ---------- Navbar ---------- */
+
+    .nav-link{
+        margin-left: 0;
+    }
+
+    /* ---------- End Navbar ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Header ---------- */
+
+    #header-my-portfolio{
+        margin: 34% 0;
+        text-align: center;
+    }
+
+    #header-my-portfolio h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    #header-my-portfolio .row-header-title .header-title{
+        margin: 6% 0 0;
+    }
+    
+    #header-my-portfolio .row-header-title p{
+        font-size: 2.2rem;
+    }
+    
+    #header-my-portfolio .row-header-title img{
+        display: none;
+    }
+    
+    #header-my-portfolio .row-header-title-2 p{
+        font-size: 2.2rem;
+        margin: 0 0 2% 0;
+    }
+    
+    #header-my-portfolio .row-header-greeting p{
+        font-size: 1rem;
+    }
+
+    #header-my-portfolio .row-header-greeting .header-complete-projects,
+    #header-my-portfolio .row-header-greeting .header-years-experience{
+        margin: 8% 0 0;
+    }
+    
+    #header-my-portfolio .row-header-greeting .header-complete-projects h3{
+        font-size: 2rem;
+    }
+    
+    #header-my-portfolio .row-header-greeting .header-years-experience h3{
+        font-size: 2rem;
+    }
+    
+    #header-my-portfolio .row-header-button{
+        margin: 2% 0;
+        padding: 0;
+    }
+    
+    #header-my-portfolio .row-header-button .horizontal-line{
+        margin: auto 0;
+    }
+    
+    #header-my-portfolio .row-header-button hr{
+        width: 104%;
+    }
+    
+    #header-my-portfolio .row-header-button button{
+        margin: 0 0 4% 0;
+    }
+
+    /* ---------- End Header ---------- */
+
+    /* ====================================================== */
+
+}

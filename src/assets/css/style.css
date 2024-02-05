@@ -122,6 +122,50 @@
     color: #FFFFFF;
 }
 
+#header-my-portfolio .header-big-image{
+    margin: 10% 0 0;
+    position: relative;
+}
+
+#header-my-portfolio .header-big-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 120px 120px 0 0;
+}
+
+#header-my-portfolio .header-big-image .header-round-arrow{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    background-color: #292929;
+    z-index: 10;
+    left: 8%;
+    top: -12%;
+    border-radius: 50%;
+}
+
+#header-my-portfolio .header-big-image .header-round-arrow-inside{
+    height: 145px;
+    width: 145px;
+    position: absolute;
+    background-color: #101010;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#header-my-portfolio .header-big-image .header-round-arrow-inside .bi-arrow-up-left{
+    color: #D5FF3F;
+    position: absolute;
+    background-color: transparent;
+    font-size: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* ---------- End Header ---------- */
 
 /* ====================================================== */

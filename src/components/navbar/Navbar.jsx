@@ -7,6 +7,7 @@ import {
 } from "react-bootstrap";
 import LogoPortfolio from "../../assets/images/logo-portfolio.png";
 import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
 
 const NavbarGeneral = () => {
 
