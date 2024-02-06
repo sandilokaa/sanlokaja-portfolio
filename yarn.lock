@@ -11098,6 +11098,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-fast-marquee@npm:^1.6.3":
+  version: 1.6.3
+  resolution: "react-fast-marquee@npm:1.6.3"
+  peerDependencies:
+    react: ">= 16.8.0 || 18.0.0"
+    react-dom: ">= 16.8.0 || 18.0.0"
+  checksum: 7dc54eb0ab073796bb33fb62e89db3db3f487b68142cebe7be656b54696db67b6b684b4339ed07cfc2d22b62a7b79cf4406148e5f21dbf580897898bfe138801
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.3.2":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -11683,6 +11693,7 @@ __metadata:
     react: ^18.2.0
     react-bootstrap: ^2.10.0
     react-dom: ^18.2.0
+    react-fast-marquee: ^1.6.3
     react-router-dom: ^6.22.0
     react-scripts: 5.0.1
     web-vitals: ^2.1.0

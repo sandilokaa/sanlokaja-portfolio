@@ -6,9 +6,15 @@ import {
     Image,
     Button
 } from "react-bootstrap";
+import Marquee from "react-fast-marquee";
+
 import HomeLayout from "../../layouts/home/HomeLayout";
 import HeaderImage1 from "../../assets/images/header-1-img.png";
 import HeaderBigImage from "../../assets/images/header-big-image.png";
+import MarqueeTechStack from "../../components/marquee/MarqueeTechStack";
+
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
 
 const Home = () => {
 
@@ -27,7 +33,7 @@ const Home = () => {
                                 <p>WEBSITE</p>
                             </Col>
                             <Col xs={12} xl={4} className="header-image">
-                                <Image src={HeaderImage1}/>
+                                <Image src={HeaderImage1} />
                             </Col>
                         </Row>
                         <Row className="row-header-title-2">
@@ -37,7 +43,7 @@ const Home = () => {
                         </Row>
                         <Row className="row-header-greeting">
                             <Col xs={12} xl={6}>
-                                <p>Certainly! In summary, I'm Sandi Loka, a highly skilled Fullstack Web Developer 
+                                <p>Certainly! In summary, I'm Sandi Loka, a highly skilled Fullstack Web Developer
                                     recognized for creating high-performance and visually appealing websites.
                                 </p>
                             </Col>
@@ -72,15 +78,31 @@ const Home = () => {
                                         <i className="bi bi-arrow-up-left"></i>
                                     </div>
                                 </div>
-                                <Image src={HeaderBigImage}/>
+                                <Image src={HeaderBigImage} />
                             </Col>
                         </Row>
                     </div>
                 </Container>
             </div>
 
-            <div id="marquee-skills">
-                
+            <div id="marquee-tech-stack">
+                <div className="my-tech-stack">
+                    <Marquee
+                        className="custom-marquee"
+                        speed={70}
+                        style={{backgroundColor: '#101010'}}
+
+                    >
+                        <MarqueeTechStack myTechStack="JAVASCRIPT"/>
+                        <MarqueeTechStack myTechStack="GOLANG"/>
+                        <MarqueeTechStack myTechStack="NODEJS"/>
+                        <MarqueeTechStack myTechStack="REACTJS"/>
+                        <MarqueeTechStack myTechStack="GORM"/>
+                        <MarqueeTechStack myTechStack="SEQUELIZEJS"/>
+                        <MarqueeTechStack myTechStack="EXPRESJS"/>
+                        <MarqueeTechStack myTechStack="POSTMAN"/>
+                    </Marquee>
+                </div>
             </div>
 
         </HomeLayout>
