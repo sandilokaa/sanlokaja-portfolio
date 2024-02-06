@@ -79,6 +79,10 @@ const Home = () => {
                 </Container>
             </div>
 
+            <div id="marquee-skills">
+                
+            </div>
+
         </HomeLayout>
 
     );
