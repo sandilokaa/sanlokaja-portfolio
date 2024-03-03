@@ -6,6 +6,7 @@
 
     .nav-link{
         margin-left: 0;
+        background-color: #D5FF3F;
     }
 
     /* ---------- End Navbar ---------- */
@@ -131,6 +132,67 @@
     
 
     /* ---------- End Marquee Tech Stack ---------- */
+
+    /* ====================================================== */
+
+    /* ====================================================== */
+
+    /* ---------- My Service ---------- */
+
+    #my-service{
+        padding: 12% 0;
+        height: 52vh;
+    }
+
+    #my-service h1{
+        font-size: 2rem;
+    }
+
+    #my-service .round-my-awesome{
+        display: none;
+    }
+
+    #my-service .round-my-service{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #D5FF3F;
+        display: inline-block;
+    }
+
+    #my-service p{
+        color: #FFFFFF;
+        font-size: 1rem;
+        margin-top: 2.2%;
+    }
+
+    .my-service-description{
+        position: relative;
+    }
+
+    .my-service-button{
+        position: absolute;
+        right: 0;
+        top: 110%;
+    }
+
+    #my-service button{
+        margin: 4% 0;
+        width: 100%;
+        padding: 4.4% 0;
+        border-radius: 2rem;
+        background-color: transparent;
+        border: #515151 solid 1px;
+        color: #515151;
+        transition: 0.3s all ease-in-out;
+    }
+
+    #my-service button:hover{
+        border: #FFFFFF solid 1px;
+        color: #FFFFFF;
+    }
+
+    /* ---------- End My Service ---------- */
 
     /* ====================================================== */
 

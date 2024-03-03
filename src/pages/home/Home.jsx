@@ -90,19 +90,74 @@ const Home = () => {
                     <Marquee
                         className="custom-marquee"
                         speed={70}
-                        style={{backgroundColor: '#101010'}}
+                        style={{ backgroundColor: '#101010' }}
 
                     >
-                        <MarqueeTechStack myTechStack="JAVASCRIPT"/>
-                        <MarqueeTechStack myTechStack="GOLANG"/>
-                        <MarqueeTechStack myTechStack="NODEJS"/>
-                        <MarqueeTechStack myTechStack="REACTJS"/>
-                        <MarqueeTechStack myTechStack="GORM"/>
-                        <MarqueeTechStack myTechStack="SEQUELIZEJS"/>
-                        <MarqueeTechStack myTechStack="EXPRESJS"/>
-                        <MarqueeTechStack myTechStack="POSTMAN"/>
+                        <MarqueeTechStack myTechStack="JAVASCRIPT" />
+                        <MarqueeTechStack myTechStack="GOLANG" />
+                        <MarqueeTechStack myTechStack="NODEJS" />
+                        <MarqueeTechStack myTechStack="REACTJS" />
+                        <MarqueeTechStack myTechStack="GORM" />
+                        <MarqueeTechStack myTechStack="SEQUELIZE" />
+                        <MarqueeTechStack myTechStack="POSTMAN" />
+                        <MarqueeTechStack myTechStack="JEST" />
+                        <MarqueeTechStack myTechStack="NUXTJS" />
+                        <MarqueeTechStack myTechStack="TAILWIND" />
                     </Marquee>
                 </div>
+            </div>
+
+            <div id="my-service">
+                <Container>
+                    <Row>
+                        <Col xs={12} xl={8}>
+                            <h1>MY AWESOME</h1>
+                        </Col>
+                        <Col xs={12} xl={4} className="d-flex justify-content-end">
+                            <div className="round-my-awesome"></div>
+                            <div className="round-my-awesome"></div>
+                            <div className="round-my-awesome"></div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} xl={12}>
+                            <h1>SERVICES <div className="round-my-service"></div></h1>
+                        </Col>
+                    </Row>
+                    <Row className="my-service-description">
+                        <Col xs={12} xl={6}>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </Col>
+                        <Col xs={12} xl={6} className="my-service-button">
+                            <Row>
+                                <Col xs={6} xl={6} className="d-flex justify-content-end">
+                                    <Button>
+                                        Fullstack Dev
+                                    </Button>
+                                </Col>
+                                <Col xs={6} xl={6} className="d-flex justify-content-end"> 
+                                    <Button>
+                                        FrontEnd Dev
+                                    </Button>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col xs={6} xl={6} className="d-flex justify-content-end">
+                                    <Button>
+                                        BackendDev
+                                    </Button>
+                                </Col>
+                                <Col xs={6} xl={6} className="d-flex justify-content-end">
+                                    <Button>
+                                        Website Design
+                                    </Button>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
 
         </HomeLayout>
