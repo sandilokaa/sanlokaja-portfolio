@@ -130,6 +130,10 @@
     color: #FFFFFF;
 }
 
+#header-my-portfolio .row-header-button button:hover img{
+    filter: brightness(0) invert(1);
+}
+
 #header-my-portfolio .header-big-image{
     margin: 10% 0 0;
     position: relative;
@@ -164,14 +168,13 @@
     border-radius: 50%;
 }
 
-#header-my-portfolio .header-big-image .header-round-arrow-inside .bi-arrow-up-left{
-    color: #D5FF3F;
+#header-my-portfolio .header-big-image .header-round-arrow-inside img{
+    width: 70px;
     position: absolute;
-    background-color: transparent;
-    font-size: 80px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 0;
 }
 
 /* ---------- End Header ---------- */
@@ -282,9 +285,94 @@
     transition: 0.3s all ease-in-out;
 }
 
+#my-service .active{
+    border: #FFFFFF solid 1px;
+    color: #FFFFFF;
+}
+
 #my-service button:hover{
     border: #FFFFFF solid 1px;
     color: #FFFFFF;
+}
+
+#my-service hr{
+    height: 0.21rem;
+    background-color: #FFFFFF;
+    margin: 6% 0 0;
+}
+
+#my-service .my-service-detail{
+    margin: 4% 0 0;
+}
+
+#my-service .my-service-detail button{
+    width: 100%;
+    padding: 4.4% 0;
+    border-radius: 2rem;
+    background-color: #D5FF3F;
+    border: #D5FF3F solid 1px;
+    color: #101010;
+    transition: 0.3s all ease-in-out;
+    font-weight: 600;
+}
+
+#my-service .my-service-detail button:hover{
+    padding: 6%;
+}
+
+#my-service .my-service-detail h4{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+#my-service .my-service-detail .my-service-detail-tech{
+    margin-top: 4%;
+}
+
+#my-service .my-service-detail .my-service-detail-tech button{
+    width: 100%;
+    padding: 4.4% 0;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: #515151 solid 1px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+#my-service .my-service-detail .my-service-detail-tech hr{
+    height: 0.15rem;
+    background-color: #FFFFFF;
+    margin-top: 6%;
+}
+
+#my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description{
+    margin-top: 4%;
+}
+
+#my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    z-index: 999;
+}
+
+#my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description p{
+    margin-top: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 999;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 /* ---------- End My Service ---------- */

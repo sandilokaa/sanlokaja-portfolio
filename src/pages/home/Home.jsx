@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
     Row,
     Col,
@@ -12,11 +12,31 @@ import HomeLayout from "../../layouts/home/HomeLayout";
 import HeaderImage1 from "../../assets/images/header-1-img.png";
 import HeaderBigImage from "../../assets/images/header-big-image.png";
 import MarqueeTechStack from "../../components/marquee/MarqueeTechStack";
+import LetsTalkIcon from "../../assets/images/lets-talk.svg";
+import MyBestProjectIcon from "../../assets/images/best-project.svg";
+import ArrowIcon from "../../assets/images/arrow.svg";
+import ArrowStabIcon from "../../assets/images/arrow-stab.svg";
+import BackendDevService from "../../components/service/BackendDevDetail";
+import FrontendDevService from "../../components/service/FrontendDevDetail";
+import FullstackDevService from "../../components/service/FullstackDevDetail";
+import WebsiteDesignService from "../../components/service/WebsiteDesignDetail";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 
 const Home = () => {
+
+    const [selectedServiceButton, setSelectedServiceButton] = useState(null);
+
+    useEffect(() => {
+        if (selectedServiceButton === null) {
+            setSelectedServiceButton('Backend Dev');
+        }
+    }, [selectedServiceButton]);
+
+    const showServiceDetail = (serviceName) => {
+        setSelectedServiceButton(serviceName);
+    };
 
     return (
 
@@ -62,12 +82,26 @@ const Home = () => {
                             </Col>
                             <Col xs={6} xl={3} className="header-button-talk">
                                 <Button>
-                                    Let's Talk
+                                    <Image
+                                        src={LetsTalkIcon}
+                                        style={{
+                                            marginRight: '15px',
+                                            transition: '0.3s all ease-in-out'
+                                        }}
+                                    />
+                                    Let's Talk With Me
                                 </Button>
                             </Col>
                             <Col xs={6} xl={3} className="header-button-aboutus">
                                 <Button>
-                                    About Us
+                                    <Image
+                                        src={MyBestProjectIcon}
+                                        style={{
+                                            marginRight: '15px',
+                                            transition: '0.3s all ease-in-out'
+                                        }}
+                                    />
+                                    My Best Project
                                 </Button>
                             </Col>
                         </Row>
@@ -75,7 +109,7 @@ const Home = () => {
                             <Col xs={12} xl={12}>
                                 <div className="header-round-arrow">
                                     <div className="header-round-arrow-inside">
-                                        <i className="bi bi-arrow-up-left"></i>
+                                        <Image src={ArrowStabIcon}/>
                                     </div>
                                 </div>
                                 <Image src={HeaderBigImage} />
@@ -89,7 +123,7 @@ const Home = () => {
                 <div className="my-tech-stack">
                     <Marquee
                         className="custom-marquee"
-                        speed={70}
+                        speed={50}
                         style={{ backgroundColor: '#101010' }}
 
                     >
@@ -127,35 +161,78 @@ const Home = () => {
                     <Row className="my-service-description">
                         <Col xs={12} xl={6}>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                I’am lead your startup at every step of its growth, providing unparalleled personal service at every interaction.
                             </p>
                         </Col>
                         <Col xs={12} xl={6} className="my-service-button">
                             <Row>
                                 <Col xs={6} xl={6} className="d-flex justify-content-end">
-                                    <Button>
+                                    <Button 
+                                        onClick={() => showServiceDetail('Fullstack Dev')}
+                                        className={selectedServiceButton === 'Fullstack Dev' ? 'active' : ''}
+                                    >
                                         Fullstack Dev
                                     </Button>
                                 </Col>
-                                <Col xs={6} xl={6} className="d-flex justify-content-end"> 
-                                    <Button>
-                                        FrontEnd Dev
+                                <Col xs={6} xl={6} className="d-flex justify-content-end">
+                                    <Button 
+                                        onClick={() => showServiceDetail('Frontend Dev')}
+                                        className={selectedServiceButton === 'Frontend Dev' ? 'active' : ''}
+                                    >
+                                        Frontend Dev
                                     </Button>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col xs={6} xl={6} className="d-flex justify-content-end">
-                                    <Button>
+                                    <Button 
+                                        onClick={() => showServiceDetail('Backend Dev')}
+                                        className={selectedServiceButton === 'Backend Dev' ? 'active' : ''}
+                                    >
                                         BackendDev
                                     </Button>
                                 </Col>
                                 <Col xs={6} xl={6} className="d-flex justify-content-end">
-                                    <Button>
+                                    <Button 
+                                        onClick={() => showServiceDetail('Website Design')}
+                                        className={selectedServiceButton === 'Website Design' ? 'active' : ''}
+                                    >
                                         Website Design
                                     </Button>
                                 </Col>
                             </Row>
                         </Col>
+                    </Row>
+                    <hr />
+                    <Row className="my-service-detail">
+                        <Col xs={12} xl={3}>
+                            <Button>
+                                BECOME A CLIENT
+                                <Image
+                                    src={ArrowIcon}
+                                    style={{
+                                        marginLeft: '15px'
+                                    }}
+                                />
+                            </Button>
+                        </Col>
+
+                        {selectedServiceButton && (
+                            <Col xs={12} xl={{ span: 8, offset: 1 }}>
+                                {selectedServiceButton === 'Fullstack Dev' && (
+                                    <FullstackDevService/>
+                                )}
+                                {selectedServiceButton === 'Frontend Dev' && (
+                                    <FrontendDevService/>
+                                )}
+                                {selectedServiceButton === 'Backend Dev' && (
+                                    <BackendDevService/>
+                                )}
+                                {selectedServiceButton === 'Website Design' && (
+                                    <WebsiteDesignService/>
+                                )}
+                            </Col>
+                        )}
                     </Row>
                 </Container>
             </div>
