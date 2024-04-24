@@ -146,7 +146,7 @@
 
     #my-service{
         padding: 12% 0;
-        height: 52vh;
+        height: auto;
     }
 
     #my-service h1{
