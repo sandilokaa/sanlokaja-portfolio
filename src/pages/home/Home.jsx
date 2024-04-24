@@ -9,17 +9,19 @@ import {
 import Marquee from "react-fast-marquee";
 
 import HomeLayout from "../../layouts/home/HomeLayout";
-import HeaderImage1 from "../../assets/images/header-1-img.png";
-import HeaderBigImage from "../../assets/images/header-big-image.png";
-import MarqueeTechStack from "../../components/marquee/MarqueeTechStack";
-import LetsTalkIcon from "../../assets/images/lets-talk.svg";
-import MyBestProjectIcon from "../../assets/images/best-project.svg";
-import ArrowIcon from "../../assets/images/arrow.svg";
-import ArrowStabIcon from "../../assets/images/arrow-stab.svg";
 import BackendDevService from "../../components/service/BackendDevDetail";
 import FrontendDevService from "../../components/service/FrontendDevDetail";
 import FullstackDevService from "../../components/service/FullstackDevDetail";
 import WebsiteDesignService from "../../components/service/WebsiteDesignDetail";
+import MarqueeTechStack from "../../components/marquee/MarqueeTechStack";
+
+import HeaderImage1 from "../../assets/images/header-1-img.png";
+import HeaderBigImage from "../../assets/images/header-big-image.png";
+import LetsTalkIcon from "../../assets/images/lets-talk.svg";
+import MyBestProjectIcon from "../../assets/images/best-project.svg";
+import ArrowIcon from "../../assets/images/arrow.svg";
+import ArrowStabIcon from "../../assets/images/arrow-stab.svg";
+
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
@@ -30,7 +32,7 @@ const Home = () => {
 
     useEffect(() => {
         if (selectedServiceButton === null) {
-            setSelectedServiceButton('Backend Dev');
+            setSelectedServiceButton('Fullstack Dev');
         }
     }, [selectedServiceButton]);
 
