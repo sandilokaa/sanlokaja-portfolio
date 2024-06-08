@@ -309,7 +309,7 @@
 #my-service .my-service-detail .sticky{
     position: sticky;
     position: -webkit-sticky;
-    top: 12%;
+    top: 14%;
 }
 
 #my-service .my-service-detail .btn-ba-client{

@@ -49,6 +49,11 @@ const BestProject = () => {
                     <div className="round-my-best-project"></div>
                 </Col>
             </Row>
+            <Row>
+                <Col xs={12} xl={4}>
+                
+                </Col>
+            </Row>
         </Container>
 
     );
