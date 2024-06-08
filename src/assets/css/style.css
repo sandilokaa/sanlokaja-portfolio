@@ -306,15 +306,21 @@
     margin: 4% 0 0;
 }
 
+#my-service .my-service-detail .sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 12%;
+}
+
 #my-service .my-service-detail .btn-ba-client{
     width: 100%;
-    padding: 4.4% 0;
     border-radius: 30px;
     background-color: #D5FF3F;
     border: #D5FF3F solid 1px;
     color: #101010;
     transition: 0.3s all ease-in-out;
     font-weight: 600;
+    margin-top: 0;
 }
 
 #my-service .my-service-detail .btn-ba-client:hover{
@@ -448,7 +454,7 @@
 }
 
 #best-project-content .round-my-best-project{
-    margin-left: 20%;
+    margin-left: 24%;
     width: 10px;
     height: 10px;
     border-radius: 50%;

@@ -100,7 +100,8 @@ const MyService = () => {
             <hr className="hr-service-1" />
             <Row className="my-service-detail">
                 <Col xs={12} xl={3}>
-                    <Button className="btn-ba-client">
+                <div className="sticky">
+                <Button className="btn-ba-client">
                         BECOME A CLIENT
                         <Image
                             src={ArrowIcon}
@@ -109,6 +110,8 @@ const MyService = () => {
                             }}
                         />
                     </Button>
+                </div>
+                    
                 </Col>
 
                 {selectedServiceButton && (
