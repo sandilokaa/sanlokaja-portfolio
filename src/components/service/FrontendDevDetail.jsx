@@ -79,22 +79,22 @@ const FrontendDevService = () => {
         <>
             <h4>Frontend Dev</h4>
             <Row className="my-service-detail-tech">
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         ReactJs
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         NuxtJs
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Tailwind
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Other
                     </Button>
@@ -111,7 +111,7 @@ const FrontendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>ReactJs</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of ReactJS on the frontend enables the development of interactive, responsive, 
                                 and efficient user interfaces. With a component-based approach, the utilization of 
@@ -119,7 +119,7 @@ const FrontendDevService = () => {
                                 ease of testing, and backing from major companies like Facebook.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -160,7 +160,7 @@ const FrontendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>NuxtJs</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of Nuxt.js on the frontend enables the development of fast, efficient, 
                                 and scalable web applications. With support for server-side rendering (SSR), 
@@ -168,7 +168,7 @@ const FrontendDevService = () => {
                                 documentation, Nuxt.js provides a powerful and intuitive development environment.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -209,7 +209,7 @@ const FrontendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Tailwind</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of Tailwind CSS on the frontend allows for the development of fast, responsive, 
                                 and consistent user interfaces. With its utility-first approach, easy configuration, 
@@ -217,7 +217,7 @@ const FrontendDevService = () => {
                                 UIs without the need for writing custom CSS. 
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -258,7 +258,7 @@ const FrontendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Other</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of HTML5 and CSS3 on the frontend enables the development of modern, 
                                 responsive, and dynamic user interfaces (UI). With new features such as 
@@ -266,7 +266,7 @@ const FrontendDevService = () => {
                                 HTML5 and CSS3 allow developers to create better and more engaging user experiences on the web.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{

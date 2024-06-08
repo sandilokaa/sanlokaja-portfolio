@@ -18,17 +18,17 @@ const WebsiteDesignService = () => {
         <>
             <h4>Website Design</h4>
             <Row className="my-service-detail-tech">
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         UI Design
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         UX Design
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         UX Research
                     </Button>
@@ -43,11 +43,11 @@ const WebsiteDesignService = () => {
                         <Col xs={12} xl={3}>
                             <h5>UI Design</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -67,11 +67,11 @@ const WebsiteDesignService = () => {
                         <Col xs={12} xl={3}>
                             <h5>UX Design</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -91,11 +91,11 @@ const WebsiteDesignService = () => {
                         <Col xs={12} xl={3}>
                             <h5>UX Research</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{

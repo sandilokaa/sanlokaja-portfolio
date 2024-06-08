@@ -62,17 +62,17 @@ const BackendDevService = () => {
         <>
             <h4>Backend Dev</h4>
             <Row className="my-service-detail-tech">
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Javascript
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Golang
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         SQL/NoSQL
                     </Button>
@@ -90,14 +90,14 @@ const BackendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Javascript</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of JavaScript on the backend with Node.js and Express.js enables the development 
                                 of fast and efficient web servers. With Express.js, you can easily create routing, 
                                 middleware, handle requests and responses, access databases, and develop RESTful APIs.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -138,14 +138,14 @@ const BackendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Golang</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of Golang and GORM in the backend enables the development of efficient and robust 
                                 server applications. Golang is known for its high performance and strong concurrency 
                                 capabilities, while GORM provides an easy-to-use interface for interacting with relational databases.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -186,7 +186,7 @@ const BackendDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>SQL/NoSQL</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The use of SQL and NoSQL facilitates the development of applications 
                                 in a flexible and efficient manner. SQL is more suitable for applications 
@@ -194,7 +194,7 @@ const BackendDevService = () => {
                                 applications requiring horizontal scalability and schema flexibility.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{

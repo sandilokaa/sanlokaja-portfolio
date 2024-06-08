@@ -62,17 +62,17 @@ const FullstackDevService = () => {
         <>
             <h4>Fullstack Dev</h4>
             <Row className="my-service-detail-tech">
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Frontend Dev
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         Backend Dev
                     </Button>
                 </Col>
-                <Col xs={12} xl={3}>
+                <Col xs={6} xl={3}>
                     <Button>
                         UI UX Design
                     </Button>
@@ -90,7 +90,7 @@ const FullstackDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Frontend Dev</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The frontend development process involves steps starting from requirement analysis, 
                                 user interface design, technology selection, to code development and testing. 
@@ -98,7 +98,7 @@ const FullstackDevService = () => {
                                 to create responsive, engaging, and high-performing user interfaces. 
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -139,7 +139,7 @@ const FullstackDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>Backend Dev</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The backend development process involves requirement analysis, architecture planning, 
                                 API development, implementation of business functionalities, testing, optimization, 
@@ -147,7 +147,7 @@ const FullstackDevService = () => {
                                 or websites, ensuring optimal performance, security, and scalability. 
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{
@@ -188,7 +188,7 @@ const FullstackDevService = () => {
                         <Col xs={12} xl={3}>
                             <h5>UI UX Design</h5>
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={10} xl={8}>
                             <p>
                                 The UI/UX design process involves user research, creating personas and user journeys, wireframing, 
                                 visual design, prototyping, user testing, design implementation, and maintenance. 
@@ -196,7 +196,7 @@ const FullstackDevService = () => {
                                 creativity, and iteration.
                             </p>
                         </Col>
-                        <Col xs={12} xl={1}>
+                        <Col xs={2} xl={1}>
                             <Image
                                 src={ArrowIcon}
                                 style={{

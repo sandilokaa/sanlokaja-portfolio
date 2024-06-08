@@ -59,7 +59,7 @@
 }
 
 #header-my-portfolio .row-header-title p{
-    font-size: 7.2rem;
+    font-size: 120px;
     font-family: var(--title-font);
     margin: auto 0;
     color: #101010;
@@ -75,27 +75,27 @@
 }
 
 #header-my-portfolio .row-header-title-2 p{
-    font-size: 7.2rem;
+    font-size: 120px;
     font-family: var(--title-font);
     margin: auto 0;
     color: #101010;
 }
 
 #header-my-portfolio .row-header-greeting p{
-    font-size: 1.25rem;
+    font-size: 20px;
     margin: auto 0;
     font-weight: 500;
     color: #101010;
 }
 
 #header-my-portfolio .row-header-greeting .header-complete-projects h3{
-    font-size: 2.7rem;
+    font-size: 48px;
     font-family: var(--title-font);
     color: #101010;
 }
 
 #header-my-portfolio .row-header-greeting .header-years-experience h3{
-    font-size: 2.7rem;
+    font-size: 48px;
     font-family: var(--title-font);
     color: #101010;
 }
@@ -118,7 +118,7 @@
 #header-my-portfolio .row-header-button button{
     width: 104%;
     padding: 4.4% 0;
-    border-radius: 2rem;
+    border-radius: 30px;
     background-color: transparent;
     border: #101010 solid 1px;
     color: #101010;
@@ -202,15 +202,15 @@
 }
 
 #marquee-tech-stack .my-tech-stack span{
-    font-size: 3rem;
+    font-size: 48px;
     font-family: var(--title-font);
     margin-right: 50px;
     color: #D5FF3F;
 }
 
 #marquee-tech-stack .my-tech-stack .rounded-element{
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 20px;
+    width: 20px;
     background-color: #D5FF3F;
     border-radius: 50%;
     margin-right: 50px;
@@ -235,7 +235,7 @@
 #my-service h1{
     color: #FFFFFF;
     font-family: var(--title-font);
-    font-size: 4rem;
+    font-size: 64px;
     margin: auto 0;
     padding: 1% 0;
 }
@@ -260,7 +260,7 @@
 
 #my-service p{
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-top: 2.2%;
 }
 
@@ -278,7 +278,7 @@
     margin: 4% 0;
     width: 100%;
     padding: 4.4% 0;
-    border-radius: 2rem;
+    border-radius: 30px;
     background-color: transparent;
     border: #515151 solid 1px;
     color: #515151;
@@ -295,8 +295,9 @@
     color: #FFFFFF;
 }
 
-#my-service hr{
-    height: 0.21rem;
+#my-service .hr-service-1,
+#my-service .hr-service-2{
+    height: 4px;
     background-color: #FFFFFF;
     margin: 6% 0 0;
 }
@@ -305,10 +306,10 @@
     margin: 4% 0 0;
 }
 
-#my-service .my-service-detail button{
+#my-service .my-service-detail .btn-ba-client{
     width: 100%;
     padding: 4.4% 0;
-    border-radius: 2rem;
+    border-radius: 30px;
     background-color: #D5FF3F;
     border: #D5FF3F solid 1px;
     color: #101010;
@@ -316,7 +317,7 @@
     font-weight: 600;
 }
 
-#my-service .my-service-detail button:hover{
+#my-service .my-service-detail .btn-ba-client:hover{
     padding: 6%;
 }
 
@@ -334,7 +335,7 @@
 #my-service .my-service-detail .my-service-detail-tech button{
     width: 100%;
     padding: 4.4% 0;
-    border-radius: 2rem;
+    border-radius: 30px;
     background-color: transparent;
     border: #515151 solid 1px;
     color: #FFFFFF;
@@ -342,7 +343,7 @@
 }
 
 #my-service .my-service-detail .my-service-detail-tech hr{
-    height: 0.15rem;
+    height: 2px;
     background-color: #FFFFFF;
     margin-top: 6%;
 }
@@ -353,7 +354,7 @@
 
 #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 500;
     z-index: 999;
 }
@@ -361,7 +362,7 @@
 #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description p{
     margin-top: 0;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     z-index: 999;
 }
@@ -386,10 +387,75 @@
 /* ---------- Jumbotron Portfolio ---------- */
 
 #jumbotron-portfolio{
-    padding: 6% 0;
+    padding: 6% 0 0;
     background-color: #171717;
 }
 
 /* ---------- End Jumbotron Portfolio ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- Best Project ---------- */
+
+#best-project-content{
+    padding: 6% 0;
+    background-color: #171717;
+}
+
+#best-project-content h1{
+    color: #FFFFFF;
+    font-family: var(--title-font);
+    font-size: 64px;
+    margin: auto 0;
+    padding: 1% 0;
+}
+
+#best-project-content .round-best-project{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D5FF3F;
+    display: inline-block;
+}
+
+#best-project-content p{
+    color: #FFFFFF;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#best-project-content .container > .row:nth-child(2){
+    margin-top: 4%;
+}
+
+#best-project-content button{
+    padding: 4.4% 0;
+    border-radius: 30px;
+    background-color: transparent;
+    border: #515151 solid 1px;
+    color: #515151;
+    transition: 0.3s all ease-in-out;
+}
+
+#best-project-content button:hover{
+    border: #FFFFFF solid 1px;
+    color: #FFFFFF;
+}
+
+#best-project-content .round-my-best-project{
+    margin-left: 20%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #292929;
+    display: inline-block;
+}
+
+/* ---------- End Best Project ---------- */
 
 /* ====================================================== */

@@ -146,7 +146,7 @@
 
     #my-service{
         padding: 12% 0;
-        height: auto;
+        height: 100%;
     }
 
     #my-service h1{
@@ -197,7 +197,78 @@
         color: #FFFFFF;
     }
 
+    #my-service .hr-service-1{
+        margin-top: 40%;
+    }
+    
+    #my-service .hr-service-2{
+        display: none;
+    }
+
+    #my-service .my-service-detail{
+        margin-top: 12%;
+        flex-direction: column-reverse;
+    }
+
+    #my-service .my-service-detail .btn-ba-client{
+        width: 100%;
+        padding: 4% 0;
+        border-radius: 2rem;
+        background-color: #D5FF3F;
+        border: #D5FF3F solid 1px;
+        color: #101010;
+        transition: 0.3s all ease-in-out;
+        font-weight: 600;
+        margin-top: 12%;
+    }
+
+    #my-service .my-service-detail h4{
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    
+    #my-service .my-service-detail .my-service-detail-tech hr{
+        height: 0.15rem;
+        background-color: #FFFFFF;
+        margin-top: 6%;
+    }
+    
+    #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description{
+        margin-top: 4%;
+    }
+    
+    #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
+        color: #FFFFFF;
+        font-size: 28px;
+        font-weight: 600;
+        z-index: 999;
+    }
+    
+    #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description p{
+        margin-top: 0;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        z-index: 999;
+    }
+
     /* ---------- End My Service ---------- */
+
+    /* ====================================================== */
+
+
+
+    /* ====================================================== */
+
+    /* ---------- Jumbotron ---------- */
+
+    #jumbotron-portfolio{
+        padding: 12% 0;
+    }
+
+    /* ---------- End Jumbotron ---------- */
 
     /* ====================================================== */
 
