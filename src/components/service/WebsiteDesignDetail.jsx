@@ -44,8 +44,11 @@ const WebsiteDesignService = () => {
                             <h5>UI Design</h5>
                         </Col>
                         <Col xs={10} xl={8}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>
+                                UI design encompasses the creation of visually appealing 
+                                and user-friendly digital interfaces, emphasizing usability and 
+                                functionality for enhanced user experience. 
+                            </p>
                         </Col>
                         <Col xs={2} xl={1}>
                             <Image
@@ -68,8 +71,11 @@ const WebsiteDesignService = () => {
                             <h5>UX Design</h5>
                         </Col>
                         <Col xs={10} xl={8}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>
+                                UX design is about creating digital experiences that meet user needs 
+                                through intuitive, accessible, and enjoyable interactions, 
+                                achieved through research, iterative design, and testing. 
+                            </p>
                         </Col>
                         <Col xs={2} xl={1}>
                             <Image
@@ -92,8 +98,11 @@ const WebsiteDesignService = () => {
                             <h5>UX Research</h5>
                         </Col>
                         <Col xs={10} xl={8}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>
+                                UX research entails gathering and analyzing user data to understand 
+                                their behaviors, needs, and preferences, guiding the design process 
+                                to create effective solutions. 
+                            </p>
                         </Col>
                         <Col xs={2} xl={1}>
                             <Image

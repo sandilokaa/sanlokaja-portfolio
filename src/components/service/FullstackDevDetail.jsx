@@ -92,10 +92,9 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The frontend development process involves steps starting from requirement analysis, 
-                                user interface design, technology selection, to code development and testing. 
-                                Frontend developers collaborate with UI/UX designers and other team members 
-                                to create responsive, engaging, and high-performing user interfaces. 
+                                The frontend development process includes requirement analysis, UI design, 
+                                technology selection, coding, and testing. Frontend developers work with 
+                                UI/UX designers to high-performing user interfaces.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
@@ -141,10 +140,9 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The backend development process involves requirement analysis, architecture planning, 
-                                API development, implementation of business functionalities, testing, optimization, 
-                                and maintenance. Backend developers work to create infrastructure that supports applications 
-                                or websites, ensuring optimal performance, security, and scalability. 
+                                Backend development includes requirement analysis, architecture planning, 
+                                API development, testing, optimization, and maintenance, 
+                                ensuring performance, security, and scalability. 
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
@@ -190,10 +188,9 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The UI/UX design process involves user research, creating personas and user journeys, wireframing, 
-                                visual design, prototyping, user testing, design implementation, and maintenance. 
-                                UI/UX designers focus on creating optimal user experiences through a combination of research, 
-                                creativity, and iteration.
+                                The UI/UX design process includes user research, personas, wireframing, 
+                                visual design, prototyping, user testing, implementation, and maintenance, 
+                                focusing on optimal user experiences.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>

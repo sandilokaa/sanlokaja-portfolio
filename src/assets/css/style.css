@@ -21,7 +21,7 @@
 
 .nav-link{
     font-size: 18px;
-    margin-left: 48px;
+    margin-left: 30px;
     color: #101010;
     font-weight: 500;
     text-decoration: none;
@@ -31,6 +31,20 @@
 
 .nav-link:hover{
     color: #101010;
+}
+
+.nav-link:nth-child(5){
+    color: #FFFFFF;
+    background-color: #101010;
+    width: 120px;
+    text-align: center;
+    border-radius: 60px;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-link:nth-child(5):hover{
+    color: #101010;
+    background-color: #FFFFFF;
 }
 
 /* ---------- End Navbar ---------- */
@@ -135,7 +149,7 @@
 }
 
 #header-my-portfolio .header-big-image{
-    margin: 10% 0 0;
+    margin-top: 10%;
     position: relative;
 }
 
@@ -299,11 +313,11 @@
 #my-service .hr-service-2{
     height: 4px;
     background-color: #FFFFFF;
-    margin: 6% 0 0;
+    margin-top: 6%;
 }
 
 #my-service .my-service-detail{
-    margin: 4% 0 0;
+    margin-top: 4%;
 }
 
 #my-service .my-service-detail .sticky{

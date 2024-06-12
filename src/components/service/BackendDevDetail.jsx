@@ -92,9 +92,9 @@ const BackendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The use of JavaScript on the backend with Node.js and Express.js enables the development 
-                                of fast and efficient web servers. With Express.js, you can easily create routing, 
-                                middleware, handle requests and responses, access databases, and develop RESTful APIs.
+                                JavaScript with Node.js and Express.js on the backend allows fast 
+                                web server development, simplifying routing, middleware, 
+                                request/response, database access, and RESTful API creation.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
@@ -140,9 +140,9 @@ const BackendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The use of Golang and GORM in the backend enables the development of efficient and robust 
-                                server applications. Golang is known for its high performance and strong concurrency 
-                                capabilities, while GORM provides an easy-to-use interface for interacting with relational databases.
+                                Golang with GORM in the backend allows for efficient server app development, 
+                                combining high performance and concurrency with a user-friendly interface 
+                                for relational databases.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
@@ -188,10 +188,9 @@ const BackendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The use of SQL and NoSQL facilitates the development of applications 
-                                in a flexible and efficient manner. SQL is more suitable for applications 
-                                with complex transactions and high data security, while NoSQL is better suited for 
-                                applications requiring horizontal scalability and schema flexibility.
+                                SQL and NoSQL facilitate flexible and efficient app development. 
+                                SQL suits complex transactions and high security, while NoSQL 
+                                fits scalable and flexible schemas.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
