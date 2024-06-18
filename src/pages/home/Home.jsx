@@ -6,6 +6,8 @@ import BestProject from "../../components/portfolio/BestProject";
 import JumbotronPortfolio from "../../components/jumbotron/JumbotronPortfolio";
 import MyService from "../../components/service/MyService";
 import MyMarquee from "../../components/marquee/MyMarquee";
+import MyMotivated from "../../components/motivated/MyMotivated";
+import FAQContent from "../../components/faq/FAQ";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
@@ -34,6 +36,14 @@ const Home = () => {
 
             <div id="best-project-content">
                 <BestProject/>
+            </div>
+
+            <div id="motivated-content">
+                <MyMotivated/>
+            </div>
+
+            <div id="faq-content">
+                <FAQContent/>
             </div>
 
         </HomeLayout>

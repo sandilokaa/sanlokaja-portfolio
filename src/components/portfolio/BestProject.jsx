@@ -51,7 +51,21 @@ const BestProject = () => {
             </Row>
             <Row>
                 <Col xs={12} xl={4}>
-                
+                    <div style={{backgroundColor: '#292929', height: '320px'}}></div>
+                </Col>
+                <Col xs={12} xl={8}>
+                    <div style={{backgroundColor: '#292929', height: '320px'}}></div>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} xl={4}>
+                    <div style={{backgroundColor: '#292929', height: '320px'}}></div>
+                </Col>
+                <Col xs={12} xl={4}>
+                    <div style={{backgroundColor: '#292929', height: '320px'}}></div>
+                </Col>
+                <Col xs={12} xl={4}>
+                    <div style={{backgroundColor: '#292929', height: '320px', borderRadius: '0 0 30% 0'}}></div>
                 </Col>
             </Row>
         </Container>
