@@ -26,7 +26,7 @@ html, body{
 .nav-link{
     font-size: 18px;
     margin-left: 30px;
-    color: #101010;
+    color: #171717;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
@@ -34,21 +34,23 @@ html, body{
 }
 
 .nav-link:hover{
-    color: #101010;
+    color: #171717;
 }
 
 .nav-link:nth-child(5){
     color: #FFFFFF;
-    background-color: #101010;
+    background-color: #171717;
     width: 120px;
     text-align: center;
     border-radius: 60px;
     transition: 0.3s all ease-in-out;
+    border: 1px solid #171717;
 }
 
 .nav-link:nth-child(5):hover{
-    color: #101010;
-    background-color: #FFFFFF;
+    color: #171717;
+    background-color: transparent;
+    border: 1px solid #171717;
 }
 
 /* ---------- End Navbar ---------- */
@@ -69,7 +71,7 @@ html, body{
 #header-my-portfolio h4{
     font-family: var(--title-font);
     margin: auto 0;
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-title .header-title{
@@ -80,7 +82,7 @@ html, body{
     font-size: 120px;
     font-family: var(--title-font);
     margin: auto 0;
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-title .header-image{
@@ -96,26 +98,26 @@ html, body{
     font-size: 120px;
     font-family: var(--title-font);
     margin: auto 0;
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting p{
     font-size: 20px;
     margin: auto 0;
     font-weight: 500;
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting .header-complete-projects h3{
     font-size: 48px;
     font-family: var(--title-font);
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting .header-years-experience h3{
     font-size: 48px;
     font-family: var(--title-font);
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-button{
@@ -130,7 +132,7 @@ html, body{
 #header-my-portfolio .row-header-button hr{
     width: 104%;
     margin-left: -1.8%;
-    color: #101010;
+    color: #171717;
 }
 
 #header-my-portfolio .row-header-button button{
@@ -138,13 +140,13 @@ html, body{
     padding: 4.4% 0;
     border-radius: 30px;
     background-color: transparent;
-    border: #101010 solid 1px;
-    color: #101010;
+    border: #171717 solid 1px;
+    color: #171717;
     transition: 0.3s all ease-in-out;
 }
 
 #header-my-portfolio .row-header-button button:hover{
-    background-color: #101010;
+    background-color: #171717;
     color: #FFFFFF;
 }
 
@@ -178,7 +180,7 @@ html, body{
     height: 145px;
     width: 145px;
     position: absolute;
-    background-color: #101010;
+    background-color: #171717;
     z-index: 10;
     left: 50%;
     top: 50%;
@@ -247,7 +249,6 @@ html, body{
 
 #my-service{
     padding: 6% 0 0 0;
-    background-color: #171717;
 }
 
 #my-service h1{
@@ -335,7 +336,7 @@ html, body{
     border-radius: 30px;
     background-color: #D5FF3F;
     border: #D5FF3F solid 1px;
-    color: #101010;
+    color: #171717;
     transition: 0.3s all ease-in-out;
     font-weight: 600;
     margin-top: 0;

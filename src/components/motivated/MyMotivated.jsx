@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Row,
     Col,
@@ -6,6 +6,8 @@ import {
     Button,
     Image
 } from "react-bootstrap";
+
+import ContactModal from "../modal/ContactModal";
 
 import MotivationImage1 from "../../assets/images/motivation-1.png";
 import MotivationImage2 from "../../assets/images/motivation-2.png";
@@ -15,6 +17,11 @@ import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 
 const MyMotivated = () => {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
 
@@ -36,7 +43,7 @@ const MyMotivated = () => {
             </Row>
             <Row className="mt-3">
                 <Col xs={12} xl={{span: 4, offset: 4}}>
-                    <Button className="btn btn-motivated-contact">
+                    <Button className="btn btn-motivated-contact" onClick={handleShow}>
                         Let’s Talk With Me
                     </Button>
                 </Col>
@@ -54,6 +61,10 @@ const MyMotivated = () => {
                     <Image src={MotivationImage2} className="w-100"/>
                 </Col>
             </Row>
+            <ContactModal
+                show={show}
+                handleClose={handleClose}
+            />
         </Container>
 
     );

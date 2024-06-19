@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Row,
     Col,
@@ -6,6 +6,8 @@ import {
     Button,
     Image
 } from "react-bootstrap";
+
+import ContactModal from "../modal/ContactModal";
 
 import HeaderImage1 from "../../assets/images/header-1-img.png";
 import HeaderBigImage from "../../assets/images/header-big-image.png";
@@ -18,8 +20,12 @@ import "../../assets/css/responsive.css";
 
 const MainContent = () => {
 
-    return (
+    const [show, setShow] = useState(false);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
 
         <Container>
 
@@ -59,7 +65,7 @@ const MainContent = () => {
                         <hr />
                     </Col>
                     <Col xs={6} xl={3} className="header-button-talk">
-                        <Button>
+                        <Button onClick={handleShow}>
                             <Image
                                 src={LetsTalkIcon}
                                 style={{
@@ -94,6 +100,10 @@ const MainContent = () => {
                     </Col>
                 </Row>
             </div>
+            <ContactModal
+                show={show}
+                handleClose={handleClose}
+            />
         </Container>
 
     );

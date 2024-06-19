@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Container,
     Row,
@@ -16,6 +16,11 @@ import {
 
 const FooterGeneral = () => {
 
+    const [hover1, setHover1] = useState(false);
+    const [hover2, setHover2] = useState(false);
+    const [hover3, setHover3] = useState(false);
+    const [hover4, setHover4] = useState(false);
+
     return (
 
         <div id="footer">
@@ -27,42 +32,58 @@ const FooterGeneral = () => {
                     <Col xs={12} xl={{ span: 3, offset: 5 }} className="d-flex justify-content-end align-items-center">
                         <AiOutlineInstagram
                             style={{
-                                color: '#000000',
-                                backgroundColor: '#FFFFFF',
+                                color: hover1 ? '#FFFFFF' : '#171717',
+                                backgroundColor: hover1 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
                                 fontSize: '40px',
-                                padding: '2%'
+                                padding: '3%',
+                                cursor: 'pointer',
+                                transition: '0.3s all ease-in-out'
                             }}
+                            onMouseEnter={() => setHover1(true)}
+                            onMouseLeave={() => setHover1(false)}
                         />
                         <AiOutlineTwitter
                             style={{
-                                color: '#000000',
-                                backgroundColor: '#FFFFFF',
+                                color: hover2 ? '#FFFFFF' : '#171717',
+                                backgroundColor: hover2 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
                                 fontSize: '40px',
-                                padding: '2%'
+                                padding: '3%',
+                                cursor: 'pointer',
+                                transition: '0.3s all ease-in-out'
                             }}
+                            onMouseEnter={() => setHover2(true)}
+                            onMouseLeave={() => setHover2(false)}
                         />
                         <AiOutlineWhatsApp
                             style={{
-                                color: '#000000',
-                                backgroundColor: '#FFFFFF',
+                                color: hover3 ? '#FFFFFF' : '#171717',
+                                backgroundColor: hover3 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
                                 fontSize: '40px',
-                                padding: '2%'
+                                padding: '3%',
+                                cursor: 'pointer',
+                                transition: '0.3s all ease-in-out'
                             }}
+                            onMouseEnter={() => setHover3(true)}
+                            onMouseLeave={() => setHover3(false)}
                         />
                         <AiOutlineMail
                             style={{
-                                color: '#000000',
-                                backgroundColor: '#FFFFFF',
+                                color: hover4 ? '#FFFFFF' : '#171717',
+                                backgroundColor: hover4 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 fontSize: '40px',
-                                padding: '2%'
+                                padding: '3%',
+                                cursor: 'pointer',
+                                transition: '0.3s all ease-in-out'
                             }}
+                            onMouseEnter={() => setHover4(true)}
+                            onMouseLeave={() => setHover4(false)}
                         />
                     </Col>
                 </Row>

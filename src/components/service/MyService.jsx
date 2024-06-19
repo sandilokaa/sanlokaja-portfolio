@@ -7,6 +7,8 @@ import {
     Image
 } from "react-bootstrap";
 
+import ContactModal from "../modal/ContactModal";
+
 import BackendDevService from "../../components/service/BackendDevDetail";
 import FrontendDevService from "../../components/service/FrontendDevDetail";
 import FullstackDevService from "../../components/service/FullstackDevDetail";
@@ -33,6 +35,12 @@ const MyService = () => {
     };
 
     /* ---------- End Selected Service Button ----------*/
+
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
 
@@ -101,7 +109,7 @@ const MyService = () => {
             <Row className="my-service-detail">
                 <Col xs={12} xl={3}>
                     <div className="sticky">
-                        <Button className="btn-ba-client">
+                        <Button className="btn-ba-client" onClick={handleShow}>
                             BECOME A CLIENT
                             <Image
                                 src={ArrowIcon}
@@ -130,6 +138,10 @@ const MyService = () => {
                     </Col>
                 )}
             </Row>
+            <ContactModal
+                show={show}
+                handleClose={handleClose}
+            />
         </Container>
 
     );
