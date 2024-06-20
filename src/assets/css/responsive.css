@@ -24,7 +24,7 @@
     }
 
     #header-my-portfolio h4{
-        font-size: 1rem;
+        font-size: 16px;
         text-align: center;
     }
     
@@ -33,7 +33,7 @@
     }
     
     #header-my-portfolio .row-header-title p{
-        font-size: 2.2rem;
+        font-size: 36px;
     }
     
     #header-my-portfolio .row-header-title img{
@@ -41,12 +41,12 @@
     }
     
     #header-my-portfolio .row-header-title-2 p{
-        font-size: 2.2rem;
+        font-size: 36px;
         margin: 0 0 2% 0;
     }
     
     #header-my-portfolio .row-header-greeting p{
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     #header-my-portfolio .row-header-greeting .header-complete-projects,
@@ -55,11 +55,11 @@
     }
     
     #header-my-portfolio .row-header-greeting .header-complete-projects h3{
-        font-size: 2rem;
+        font-size: 32px;
     }
     
     #header-my-portfolio .row-header-greeting .header-years-experience h3{
-        font-size: 2rem;
+        font-size: 32px;
     }
     
     #header-my-portfolio .row-header-button{
@@ -123,15 +123,15 @@
         height: 65px;
     }
     #marquee-tech-stack .my-tech-stack span{
-        font-size: 1.5rem;
+        font-size: 24px;
         font-family: var(--title-font);
         margin-right: 25px;
         color: #D5FF3F;
     }
     
     #marquee-tech-stack .my-tech-stack .rounded-element{
-        height: 1rem;
-        width: 1rem;
+        height: 14px;
+        width: 14px;
         margin-right: 25px;
     }
     
@@ -145,12 +145,12 @@
     /* ---------- My Service ---------- */
 
     #my-service{
-        padding: 12% 0;
+        padding: 12% 0 0;
         height: 100%;
     }
 
     #my-service h1{
-        font-size: 2rem;
+        font-size: 34px;
     }
 
     #my-service .round-my-awesome{
@@ -167,7 +167,7 @@
 
     #my-service p{
         color: #FFFFFF;
-        font-size: 1rem;
+        font-size: 16px;
         margin-top: 2.2%;
     }
 
@@ -185,7 +185,7 @@
         margin: 4% 0;
         width: 100%;
         padding: 4.4% 0;
-        border-radius: 2rem;
+        border-radius: 20px;
         background-color: transparent;
         border: #515151 solid 1px;
         color: #515151;
@@ -209,7 +209,7 @@
     #my-service .my-service-detail .btn-ba-client{
         width: 100%;
         padding: 4% 0;
-        border-radius: 2rem;
+        border-radius: 20px;
         background-color: #D5FF3F;
         border: #D5FF3F solid 1px;
         color: #101010;
@@ -221,12 +221,12 @@
     #my-service .my-service-detail h4{
         color: #FFFFFF;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 34px;
         margin-bottom: 0;
     }
     
     #my-service .my-service-detail .my-service-detail-tech hr{
-        height: 0.15rem;
+        height: 2px;
         background-color: #FFFFFF;
         margin-top: 6%;
     }
@@ -237,7 +237,7 @@
     
     #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
         color: #FFFFFF;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 600;
         z-index: 999;
     }
@@ -261,11 +261,172 @@
     /* ---------- Jumbotron ---------- */
 
     #jumbotron-portfolio{
-        padding: 12% 0;
+        padding: 12% 0 0;
     }
 
     /* ---------- End Jumbotron ---------- */
 
     /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Best Project ---------- */
+
+    #best-project-content{
+        padding: 12% 0 0;
+    }
+
+    #best-project-content h1{
+        font-size: 36px;
+    }
+
+    #best-project-content .round-best-project{
+        width: 10px;
+        height: 10px;
+    }
+
+    #best-project-content p{
+        font-size: 16px;
+    }
+
+    #best-project-content .container > .row:nth-child(2){
+        margin-top: 2%;
+    }
+
+    #best-project-content button{
+        margin-top: 6%;
+    }
+
+    #best-project-content .round-project{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    #best-project-content .round-my-best-project{
+        margin-top: 8%;
+        margin-left: 10%;
+        left: 0;
+        transform: translate(-180%);
+    }
+
+    /* ---------- End Best Project ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Motivated Content ---------- */
+
+    #motivated-content{
+        padding: 12% 0 0;
+    }
+
+    #motivated-content h1{
+        font-size: 36px;
+    }
+
+    #motivated-content .btn-motivated-contact:hover{
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        background-color: transparent;
+    }
+
+    #motivated-content .container > .row:nth-child(4){
+        margin-top: 4%;
+    }
+
+    #motivated-content .btn-listen-project{
+        width: 280px;
+    }
+
+    /* ---------- End Motivated Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- FAQ Content ---------- */
+
+    #faq-content{
+        padding: 12% 0 0;
+    }
+
+    #faq-content h1{
+        font-size: 36px;
+        font-family: var(--title-font);
+        color: #FFFFFF;
+        line-height: 50px;
+        margin: auto 0;
+    }
+
+    #faq-content .wrapper .question-container {
+        width: 100%;
+        text-align: left;
+        padding: 20px 10px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #faq-content .wrapper .arrow {
+        font-size: 30px;
+    }
+
+    #faq-content .arrow.active {
+        rotate: 180deg;
+        color: #FFFFFF;
+    }
+
+    #faq-content .wrapper .answer-container {
+        padding: 0 10px;
+        transition: height .7s ease-in-out;
+        margin-bottom: 2%;
+    }
+
+    #faq-content .wrapper .answer-content {
+        padding: 12px 0;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    /* ---------- End FAQ Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- Footer Content ---------- */
+
+    #footer{
+        margin-top: 20%;
+        padding: 4% 0;
+        background-color: #292929;
+    }
+
+    #footer .container > .row:nth-child(2){
+        margin-top: 4%;
+
+        p{
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+
+    #footer .copyright{
+        justify-content: center !important;
+    }
+
+    /* ---------- End Footer Content ---------- */
+
+    /* ====================================================== */
+
 
 }

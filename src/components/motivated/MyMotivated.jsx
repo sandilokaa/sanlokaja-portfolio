@@ -31,7 +31,7 @@ const MyMotivated = () => {
                     <h1>I AM A HIGHYLY MOTIVATED</h1>
                 </Col>
             </Row>
-            <Row className="mt-4">
+            <Row>
                 <Col xs={12} xl={4}>
                     <h1>PERSON</h1>
                 </Col>
@@ -41,7 +41,7 @@ const MyMotivated = () => {
                     </p>
                 </Col>
             </Row>
-            <Row className="mt-3">
+            <Row className="mt-2">
                 <Col xs={12} xl={{span: 4, offset: 4}}>
                     <Button className="btn btn-motivated-contact" onClick={handleShow}>
                         Let’s Talk With Me
@@ -49,7 +49,7 @@ const MyMotivated = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} xl={7}>
+                <Col xs={12} xl={7} className="mt-4">
                     <Image src={MotivationImage1} className="w-100"/>
                     <div style={{position: 'absolute', top: '80%', left: '50%', transform: 'translate(-50%, -50%)'}}>
                         <Button className="btn btn-listen-project">
@@ -57,7 +57,7 @@ const MyMotivated = () => {
                         </Button>
                     </div>
                 </Col>
-                <Col xs={12} xl={5}>
+                <Col xs={12} xl={5} className="mt-4">
                     <Image src={MotivationImage2} className="w-100"/>
                 </Col>
             </Row>

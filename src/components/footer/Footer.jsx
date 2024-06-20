@@ -26,17 +26,17 @@ const FooterGeneral = () => {
         <div id="footer">
             <Container>
                 <Row>
-                    <Col xs={12} xl={4} className="d-flex align-items-center">
+                    <Col xs={6} xl={4} className="d-flex align-items-center">
                         <Image src={LogoFooter} />
                     </Col>
-                    <Col xs={12} xl={{ span: 3, offset: 5 }} className="d-flex justify-content-end align-items-center">
+                    <Col xs={6} xl={{ span: 3, offset: 5 }} className="d-flex justify-content-end align-items-center">
                         <AiOutlineInstagram
                             style={{
                                 color: hover1 ? '#FFFFFF' : '#171717',
                                 backgroundColor: hover1 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
-                                fontSize: '40px',
+                                fontSize: window.innerWidth < 480 ? '30px' : '40px',
                                 padding: '3%',
                                 cursor: 'pointer',
                                 transition: '0.3s all ease-in-out'
@@ -50,7 +50,7 @@ const FooterGeneral = () => {
                                 backgroundColor: hover2 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
-                                fontSize: '40px',
+                                fontSize: window.innerWidth < 480 ? '30px' : '40px',
                                 padding: '3%',
                                 cursor: 'pointer',
                                 transition: '0.3s all ease-in-out'
@@ -64,7 +64,7 @@ const FooterGeneral = () => {
                                 backgroundColor: hover3 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
                                 marginRight: '6%',
-                                fontSize: '40px',
+                                fontSize: window.innerWidth < 480 ? '30px' : '40px',
                                 padding: '3%',
                                 cursor: 'pointer',
                                 transition: '0.3s all ease-in-out'
@@ -77,7 +77,7 @@ const FooterGeneral = () => {
                                 color: hover4 ? '#FFFFFF' : '#171717',
                                 backgroundColor: hover4 ? '#171717' : '#FFFFFF',
                                 borderRadius: '20px',
-                                fontSize: '40px',
+                                fontSize: window.innerWidth < 480 ? '30px' : '40px',
                                 padding: '3%',
                                 cursor: 'pointer',
                                 transition: '0.3s all ease-in-out'
@@ -93,7 +93,7 @@ const FooterGeneral = () => {
                             I am committed to providing the best web solutions. Contact us to start designing your dream website.
                         </p>
                     </Col>
-                    <Col xs={12} xl={{ span: 3, offset: 5 }} className="d-flex justify-content-end">
+                    <Col xs={12} xl={{ span: 3, offset: 5 }} className="d-flex justify-content-end copyright">
                         <p>
                             ©2024 - Sandi Loka Copyright <br /> All Rights Reserved
                         </p>

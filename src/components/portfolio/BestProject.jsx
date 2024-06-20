@@ -43,28 +43,26 @@ const BestProject = () => {
                         UI UX Design
                     </Button>
                 </Col>
-                <Col xs={6} xl={4} className="d-flex justify-content-end align-items-center">
+                <Col xs={12} xl={4} className="d-flex justify-content-end align-items-center round-project">
                     <div className="round-my-best-project"></div>
                     <div className="round-my-best-project"></div>
                     <div className="round-my-best-project"></div>
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                     <div style={{backgroundColor: '#292929', height: '320px'}}></div>
                 </Col>
-                <Col xs={12} xl={8}>
+                <Col xs={12} xl={8} className="mt-4">
                     <div style={{backgroundColor: '#292929', height: '320px'}}></div>
                 </Col>
-            </Row>
-            <Row>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                     <div style={{backgroundColor: '#292929', height: '320px'}}></div>
                 </Col>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                     <div style={{backgroundColor: '#292929', height: '320px'}}></div>
                 </Col>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                     <div style={{backgroundColor: '#292929', height: '320px', borderRadius: '0 0 30% 0'}}></div>
                 </Col>
             </Row>
