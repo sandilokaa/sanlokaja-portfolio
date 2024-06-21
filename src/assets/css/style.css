@@ -12,6 +12,11 @@ html, body{
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Stretch Pro';
+    src: url('../fonts/StretchPro.otf') format('opentype');
+}
+
 :root{
     --title-font: 'Stretch Pro', sans-serif;
 }
