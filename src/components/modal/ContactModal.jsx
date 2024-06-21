@@ -26,7 +26,7 @@ const ContactModal = ({ show, handleClose }) => {
 
         const message = `Name: ${payloadMessage.name}%0aEmail: ${payloadMessage.email}%0aPhone: ${payloadMessage.phone}%0aQuestion: ${payloadMessage.qeustion}`;
 
-        const whatsappUrl = `https://web.whatsapp.com/send?phone=6285934920467&text=${message}`;
+        const whatsappUrl = `https://wa.me/6285934920467?text=${message}`;
 
         window.open(whatsappUrl, "_blank");
 
