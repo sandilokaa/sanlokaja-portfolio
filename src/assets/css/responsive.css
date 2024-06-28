@@ -311,6 +311,10 @@
         transform: translate(-180%);
     }
 
+    #best-project-content .overlay-content > .row:nth-child(2){
+        margin-top: 50% !important;
+    }
+
     /* ---------- End Best Project ---------- */
 
     /* ====================================================== */
@@ -415,8 +419,8 @@
         margin-top: 4%;
 
         p{
-            color: #FFFFFF;
-            text-align: center;
+            color: #FFFFFF !important;
+            text-align: center !important;
         }
     }
 

@@ -464,6 +464,7 @@ html, body{
 }
 
 #best-project-content button{
+    width: 100%;
     padding: 4.4% 0;
     border-radius: 30px;
     background-color: transparent;
@@ -473,6 +474,11 @@ html, body{
 }
 
 #best-project-content button:hover{
+    border: #FFFFFF solid 1px;
+    color: #FFFFFF;
+}
+
+#best-project-content .active{
     border: #FFFFFF solid 1px;
     color: #FFFFFF;
 }
@@ -488,6 +494,52 @@ html, body{
 
 #best-project-content .container > .row:nth-child(3){
     margin-top: 4%;
+}
+
+#best-project-content .overlay-container{
+    position: relative;
+    background-color: #292929;
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#best-project-content .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#best-project-content .overlay-container:hover .overlay{
+    opacity: 1;
+}
+
+#best-project-content .overlay-content{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+}
+
+#best-project-content .overlay-content > .row:nth-child(1){
+    color: white;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    
+}
+
+#best-project-content .overlay-content > .row:nth-child(2){
+    color: white;
+    width: 100%;
+    margin-top: 30%;
+    margin-left: 0;
+    padding: 0 2%;
 }
 
 /* ---------- End Best Project ---------- */
