@@ -1,4 +1,4 @@
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 896px) {
 
     /* ====================================================== */
 
@@ -63,24 +63,21 @@
     }
     
     #header-my-portfolio .row-header-button{
-        margin: 2% 0;
+        margin-top: 2%;
         padding: 0;
     }
     
     #header-my-portfolio .row-header-button .horizontal-line{
-        margin: auto 0;
-    }
-    
-    #header-my-portfolio .row-header-button hr{
-        width: 104%;
+        margin-bottom: 2%;
     }
     
     #header-my-portfolio .row-header-button button{
-        margin: 0 0 4% 0;
+        margin-bottom: 4%;
+        font-size: 14px;
     }
 
     #header-my-portfolio .row-header-button img{
-        width: 15px;
+        width: 14px;
         margin-right: 5px !important;
     }
 
