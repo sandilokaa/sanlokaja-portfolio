@@ -6,11 +6,11 @@ import {
     Button
 } from "react-bootstrap";
 
-import ArrowIcon from "../../assets/images/arrow.svg";
-import ReactJSImage from "../../assets/images/reactjs-image.png";
-import NuxtJSImage from "../../assets/images/nuxtjs-image.png";
-import TailwindImage from "../../assets/images/tailwind-image.png";
-import CSSImage from "../../assets/images/css-image.png";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
+import ReactJSImage from "../../assets/images/services/reactjs-image.png";
+import NuxtJSImage from "../../assets/images/services/nuxtjs-image.png";
+import TailwindImage from "../../assets/images/services/tailwind-image.png";
+import CSSImage from "../../assets/images/services/css-image.png";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

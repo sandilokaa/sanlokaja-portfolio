@@ -4,6 +4,11 @@
 
     /* ---------- Navbar ---------- */
 
+    .navbar{
+        padding: 10px 0;
+        height: 90px;
+    }
+    
     .nav-link{
         margin-left: 0;
         background-color: #D5FF3F;

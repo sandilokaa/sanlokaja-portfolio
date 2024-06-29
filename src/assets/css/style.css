@@ -9,6 +9,7 @@
 
 html, body{
     background-color: #171717;
+    scroll-behavior: smooth;
 }
 
 @font-face {

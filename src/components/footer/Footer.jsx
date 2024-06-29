@@ -6,7 +6,7 @@ import {
     Image
 } from "react-bootstrap";
 
-import LogoFooter from "../../assets/images/logo-2.png";
+import LogoFooter from "../../assets/images/logos/logo-2.png";
 import {
     AiOutlineInstagram,
     AiOutlineTwitter,

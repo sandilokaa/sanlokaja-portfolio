@@ -6,7 +6,7 @@ import {
     Button
 } from "react-bootstrap";
 
-import ArrowIcon from "../../assets/images/arrow.svg";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

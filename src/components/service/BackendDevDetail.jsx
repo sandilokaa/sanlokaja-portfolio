@@ -6,10 +6,10 @@ import {
     Button
 } from "react-bootstrap";
 
-import ArrowIcon from "../../assets/images/arrow.svg";
-import NodeJsImage from "../../assets/images/nodejs.png";
-import GolangImage from "../../assets/images/golang.png";
-import DatabaseImage from "../../assets/images/database.png";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
+import NodeJsImage from "../../assets/images/services/nodejs.png";
+import GolangImage from "../../assets/images/services/golang.png";
+import DatabaseImage from "../../assets/images/services/database.png";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

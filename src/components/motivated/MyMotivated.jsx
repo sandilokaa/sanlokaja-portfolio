@@ -9,9 +9,9 @@ import {
 
 import ContactModal from "../modal/ContactModal";
 
-import MotivationImage1 from "../../assets/images/motivation-1.png";
-import MotivationImage2 from "../../assets/images/motivation-2.png";
-import ArrowIcon from "../../assets/images/arrow-motivated.svg";
+import MotivationImage1 from "../../assets/images/backgrounds/motivation-1.png";
+import MotivationImage2 from "../../assets/images/backgrounds/motivation-2.png";
+import ArrowIcon from "../../assets/images/icons/arrow-motivated.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

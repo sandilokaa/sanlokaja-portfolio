@@ -1,4 +1,5 @@
-import Image1 from "../images/motivation-1.png";
+import Image1 from "../images/backgrounds/motivation-1.png";
+import SBFullstackImage from "../images/projects/sb-fullstack.png";
 
 export const ProjectData = {
     "type": "Project",
@@ -22,7 +23,7 @@ export const ProjectData = {
                 },
                 {
                     id: 3,
-                    image: Image1,
+                    image: SBFullstackImage,
                     title: "Start Business",
                     year: 2023
                 },

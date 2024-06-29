@@ -7,7 +7,7 @@ import {
     Image
 } from "react-bootstrap";
 
-import ArrowExample from "../../assets/images/arrow-project.png";
+import ArrowExample from "../../assets/images/icons/arrow-project.png";
 
 import { ProjectData } from "../../assets/js/projectData";
 

@@ -6,10 +6,10 @@ import {
     Button
 } from "react-bootstrap";
 
-import ArrowIcon from "../../assets/images/arrow.svg";
-import UIUXImage from "../../assets/images/uiux-image.png";
-import FrontEndImage from "../../assets/images/frontend-image.png";
-import BackEndImage from "../../assets/images/backend-image.png";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
+import UIUXImage from "../../assets/images/services/uiux-image.png";
+import FrontEndImage from "../../assets/images/services/frontend-image.png";
+import BackEndImage from "../../assets/images/services/backend-image.png";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

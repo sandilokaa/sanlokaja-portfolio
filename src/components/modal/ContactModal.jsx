@@ -6,7 +6,7 @@ import {
     Form
 } from "react-bootstrap";
 
-import LogoPortfolioImage from "../../assets/images/logo-portfolio.png";
+import LogoPortfolioImage from "../../assets/images/logos/logo-portfolio.png";
 
 const ContactModal = ({ show, handleClose }) => {
 

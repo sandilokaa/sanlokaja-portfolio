@@ -9,11 +9,11 @@ import {
 
 import ContactModal from "../modal/ContactModal";
 
-import HeaderImage1 from "../../assets/images/header-1-img.png";
-import HeaderBigImage from "../../assets/images/header-big-image.png";
-import LetsTalkIcon from "../../assets/images/lets-talk.svg";
-import MyBestProjectIcon from "../../assets/images/best-project.svg";
-import ArrowStabIcon from "../../assets/images/arrow-stab.svg";
+import HeaderImage1 from "../../assets/images/backgrounds/header-1-img.png";
+import HeaderBigImage from "../../assets/images/backgrounds/header-big-image.png";
+import LetsTalkIcon from "../../assets/images/icons/lets-talk.svg";
+import MyBestProjectIcon from "../../assets/images/icons/best-project.svg";
+import ArrowStabIcon from "../../assets/images/icons/arrow-stab.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

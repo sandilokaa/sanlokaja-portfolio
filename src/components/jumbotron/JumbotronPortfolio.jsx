@@ -6,8 +6,8 @@ import {
     Image
 } from "react-bootstrap";
 
-import JumbotronImage from "../../assets/images/jumbotron.png";
-import ArrowIcon from "../../assets/images/arrow.svg";
+import JumbotronImage from "../../assets/images/backgrounds/jumbotron.png";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

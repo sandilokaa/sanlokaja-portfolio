@@ -13,7 +13,7 @@ import BackendDevService from "../../components/service/BackendDevDetail";
 import FrontendDevService from "../../components/service/FrontendDevDetail";
 import FullstackDevService from "../../components/service/FullstackDevDetail";
 import WebsiteDesignService from "../../components/service/WebsiteDesignDetail";
-import ArrowIcon from "../../assets/images/arrow.svg";
+import ArrowIcon from "../../assets/images/icons/arrow.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
