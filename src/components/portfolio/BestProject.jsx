@@ -95,7 +95,7 @@ const BestProject = () => {
                                     <div className="overlay-content">
                                         <Row>
                                             <Col xs={12} xl={12} className="d-flex justify-content-end">
-                                                <Image src={ArrowExample} style={{ position: 'absolute', width: '80px', right: '0', top: '0' }} />
+                                                <Image src={ArrowExample} style={{ position: 'absolute', width: window.innerWidth < 896 ? '70px' : '80px', right: '0', top: '0' }} />
                                             </Col>
                                         </Row>
                                         <Row style={{ marginTop: bestProject.id === 2 ? '22%' : '45%' }}>
@@ -103,7 +103,7 @@ const BestProject = () => {
                                                 <p>{bestProject.year}</p>
                                             </Col>
                                             <Col xs={12} xl={12}>
-                                                <p style={{ fontSize: '36px', fontWeight: '600' }}>{bestProject.title}</p>
+                                                <p style={{ fontSize: window.innerWidth < 896 ? '34px' : '36px', fontWeight: '600' }}>{bestProject.title}</p>
                                             </Col>
                                         </Row>
                                     </div>

@@ -33,31 +33,29 @@ html, body{
 
 .nav-link{
     font-size: 18px;
-    margin-left: 30px;
     color: #171717;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
-
+    margin: auto 0 auto 30px;
 }
 
 .nav-link:hover{
     color: #171717;
 }
 
-.nav-link:nth-child(5){
-    color: #FFFFFF;
+.nav-link button{
+    margin-right: -8px;
+    border-radius: 20px;
     background-color: #171717;
-    width: 120px;
-    text-align: center;
-    border-radius: 60px;
-    transition: 0.3s all ease-in-out;
     border: 1px solid #171717;
+    width: 120px;
+    transition: 0.3s ease-in-out;
 }
 
-.nav-link:nth-child(5):hover{
-    color: #171717;
+.nav-link button:hover{
     background-color: transparent;
+    color: #171717;
     border: 1px solid #171717;
 }
 

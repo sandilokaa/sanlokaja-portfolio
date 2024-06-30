@@ -4,14 +4,28 @@
 
     /* ---------- Navbar ---------- */
 
-    .navbar{
-        padding: 10px 0;
-        height: 90px;
+    .nav-brand{
+        padding-left: 10px;
     }
-    
-    .nav-link{
-        margin-left: 0;
+
+    .nav-toggle{
+        margin-right: 10px;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+        margin-top: 6%;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-expand-xl .navbar-nav .nav-link {
+        width: 100%;
         background-color: #D5FF3F;
+        margin-left: 0;
+        padding-left: 10px;
     }
 
     /* ---------- End Navbar ---------- */
@@ -312,7 +326,7 @@
         left: 0;
         transform: translate(-180%);
     }
-
+    
     #best-project-content .overlay-content > .row:nth-child(2){
         margin-top: 50% !important;
     }
