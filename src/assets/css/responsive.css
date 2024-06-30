@@ -5,27 +5,22 @@
     /* ---------- Navbar ---------- */
 
     .nav-brand{
-        padding-left: 10px;
+        padding-left: 12px;
     }
 
     .nav-toggle{
-        margin-right: 10px;
+        margin-right: 12px;
     }
 
     .navbar-collapse {
-        flex-direction: column;
         margin-top: 6%;
-    }
-
-    .navbar-nav {
-        width: 100%;
     }
 
     .navbar-expand-xl .navbar-nav .nav-link {
         width: 100%;
         background-color: #D5FF3F;
         margin-left: 0;
-        padding-left: 10px;
+        padding-left: 12px;
     }
 
     /* ---------- End Navbar ---------- */
