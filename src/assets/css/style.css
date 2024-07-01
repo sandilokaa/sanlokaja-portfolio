@@ -605,6 +605,97 @@ html, body{
 
 /* ====================================================== */
 
+/* ---------- Case Study Content ---------- */
+
+#case-study{
+    padding: 6% 0 0;
+}
+
+#case-study .container > .row:nth-child(1) h1{
+    font-size: 46px;
+    font-family: var(--title-font);
+    color: #FFFFFF;
+}
+
+#case-study .case-study-description{
+    margin-top: 6%;
+}
+
+#case-study .case-study-description .sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 14%;
+}
+
+#case-study .case-study-description .btn-case-study{
+    width: 100%;
+    border-radius: 30px;
+    background-color: #D5FF3F;
+    border: #D5FF3F solid 1px;
+    color: #171717;
+    transition: 0.3s all ease-in-out;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 4% 0;
+}
+
+#case-study .case-study-description .btn-case-study:hover{
+    padding: 6%;
+}
+
+#case-study .case-study-description p{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: auto 0;
+}
+
+#case-study .case-study-description .cs-short-description .description-two {
+    margin-top: 20%;
+}
+
+#case-study .cs-workflow{
+    margin-top: 2%;
+}
+
+#case-study .cs-workflow p{
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: auto 0;
+}
+
+/* ---------- End Case Study Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
+/* ---------- My Industry Content ---------- */
+
+#my-industry{
+    padding: 6% 0 0;
+}
+
+#my-industry .industry-head-title-one p{
+    color: #FFFFFF;
+}
+
+#my-industry .industry-head-title-two p{
+    font-size: 34px;
+    color: #FFFFFF;
+}
+
+#my-industry .industry-type{
+    margin-top: 6%;
+}
+
+/* ---------- End My Industry Content ---------- */
+
+/* ====================================================== */
+
+
+/* ====================================================== */
+
 /* ---------- FAQ Content ---------- */
 
 #faq-content{

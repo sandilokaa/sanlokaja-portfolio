@@ -38,7 +38,7 @@ const NavbarGeneral = () => {
                             <Nav.Link href="#my-service">Service</Nav.Link>
                             <Nav.Link>
                                 <Button onClick={handleShow}>
-                                    Let's talk
+                                    Let's Talk
                                 </Button>
                             </Nav.Link>
                         </Nav>

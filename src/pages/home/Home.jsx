@@ -7,6 +7,8 @@ import JumbotronPortfolio from "../../components/jumbotron/JumbotronPortfolio";
 import MyService from "../../components/service/MyService";
 import MyMarquee from "../../components/marquee/MyMarquee";
 import MyMotivated from "../../components/motivated/MyMotivated";
+import CaseStudy from "../../components/studies/CaseStudy";
+import MyIndustry from "../../components/industries/MyIndustry";
 import FAQContent from "../../components/faq/FAQ";
 
 import "../../assets/css/style.css";
@@ -40,6 +42,14 @@ const Home = () => {
 
             <div id="motivated-content">
                 <MyMotivated/>
+            </div>
+
+            <div id="case-study">
+                <CaseStudy/>
+            </div>
+            
+            <div id="my-industry">
+                <MyIndustry/>
             </div>
 
             <div id="faq-content">
