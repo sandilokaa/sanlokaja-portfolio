@@ -43,17 +43,17 @@ const CaseStudy = () => {
                     <Row>
                         <Col xs={12} xl={12} className="description-one">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit, sed do eiusmod.
+                                This commitment aims to support individuals and organizations in their digital journey by 
+                                providing the latest and most innovative technology, in-depth training, and educational 
+                                resources. With adequate technical support and customer service, users can maximize 
+                                the use of technology. 
                             </p>
                         </Col>
                         <Col xs={12} xl={12} className="description-two">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Lorem ipsum dolor sit amet.
+                                Customized digital solutions are also offered, ensuring data security and privacy. 
+                                This comprehensive approach ensures that every user can achieve optimal success 
+                                in the rapidly evolving digital era.
                             </p>
                         </Col>
                     </Row>

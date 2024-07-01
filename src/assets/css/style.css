@@ -612,7 +612,7 @@ html, body{
 }
 
 #case-study .container > .row:nth-child(1) h1{
-    font-size: 46px;
+    font-size: 48px;
     font-family: var(--title-font);
     color: #FFFFFF;
 }
@@ -650,7 +650,7 @@ html, body{
 }
 
 #case-study .case-study-description .cs-short-description .description-two {
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 #case-study .cs-workflow{
