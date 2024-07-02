@@ -24,7 +24,7 @@ const Workflow = () => {
                                 {workflow.properties.map((detail) => {
                                     return (
                                         <Col xs={12} xl={12} key={detail.id} className="mt-2">
-                                            <p style={{ background: '#292929', textAlign: 'center', borderRadius: '20px', padding: '3%', fontSize: '16px' }}>{detail.title}</p>
+                                            <p style={{ background: '#292929', textAlign: 'center', borderRadius: '40px', padding: '3%', fontSize: '16px' }}>{detail.title}</p>
                                         </Col>
                                     )
                                 })}

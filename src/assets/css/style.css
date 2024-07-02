@@ -32,7 +32,7 @@ html, body{
 }
 
 .nav-link{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #171717;
     font-weight: 500;
     text-decoration: none;
@@ -85,7 +85,7 @@ html, body{
 }
 
 #header-my-portfolio .row-header-title p{
-    font-size: 120px;
+    font-size: 7rem;
     font-family: var(--title-font);
     margin: auto 0;
     color: #171717;
@@ -101,27 +101,27 @@ html, body{
 }
 
 #header-my-portfolio .row-header-title-2 p{
-    font-size: 120px;
+    font-size: 7rem;
     font-family: var(--title-font);
     margin: auto 0;
     color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting p{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: auto 0;
     font-weight: 500;
     color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting .header-complete-projects h3{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: var(--title-font);
     color: #171717;
 }
 
 #header-my-portfolio .row-header-greeting .header-years-experience h3{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: var(--title-font);
     color: #171717;
 }
@@ -228,7 +228,7 @@ html, body{
 }
 
 #marquee-tech-stack .my-tech-stack span{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: var(--title-font);
     margin-right: 50px;
     color: #D5FF3F;
@@ -260,13 +260,12 @@ html, body{
 #my-service h1{
     color: #FFFFFF;
     font-family: var(--title-font);
-    font-size: 64px;
+    font-size: 4rem;
     margin: auto 0;
     padding: 1% 0;
 }
 
 #my-service .round-my-awesome{
-    margin-top: 3.8%;
     margin-left: 30%;
     width: 10px;
     height: 10px;
@@ -285,7 +284,7 @@ html, body{
 
 #my-service p{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 2.2%;
 }
 
@@ -355,7 +354,7 @@ html, body{
 #my-service .my-service-detail h4{
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 0;
 }
 
@@ -385,7 +384,7 @@ html, body{
 
 #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
     color: #FFFFFF;
-    font-size: 34px;
+    font-size: 2rem;
     font-weight: 500;
     z-index: 999;
 }
@@ -393,7 +392,7 @@ html, body{
 #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description p{
     margin-top: 0;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     z-index: 999;
 }
@@ -437,7 +436,7 @@ html, body{
 #best-project-content h1{
     color: #FFFFFF;
     font-family: var(--title-font);
-    font-size: 64px;
+    font-size: 3.375rem;
     margin: auto 0;
     padding: 1% 0;
 }
@@ -452,7 +451,7 @@ html, body{
 
 #best-project-content p{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -530,7 +529,6 @@ html, body{
     width: 100%;
     margin-left: 0;
     margin-top: 0;
-    
 }
 
 #best-project-content .overlay-content > .row:nth-child(2){
@@ -556,7 +554,7 @@ html, body{
 }
 
 #motivated-content h1{
-    font-size: 61px;
+    font-size: 3.3rem;
     color: #FFFFFF;
     font-family: var(--title-font);
     margin: auto 0;
@@ -612,7 +610,7 @@ html, body{
 }
 
 #case-study .container > .row:nth-child(1) h1{
-    font-size: 48px;
+    font-size: 2.65rem;
     font-family: var(--title-font);
     color: #FFFFFF;
 }
@@ -645,7 +643,7 @@ html, body{
 
 #case-study .case-study-description p{
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: auto 0;
 }
 
@@ -659,7 +657,7 @@ html, body{
 
 #case-study .cs-workflow p{
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: auto 0;
 }
 
@@ -681,7 +679,7 @@ html, body{
 }
 
 #my-industry .industry-head-title-two p{
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #FFFFFF;
 }
 
@@ -703,10 +701,10 @@ html, body{
 }
 
 #faq-content h1{
-    font-size: 54px;
+    font-size: 3rem;
     font-family: var(--title-font);
     color: #FFFFFF;
-    line-height: 100px;
+    line-height: 90px;
     margin: auto 0;
 }
 
@@ -733,7 +731,7 @@ html, body{
 }
 
 #faq-content .wrapper .arrow {
-    font-size: 32px;
+    font-size: 2rem;
     transition: .5s ease-in-out;
 }
 

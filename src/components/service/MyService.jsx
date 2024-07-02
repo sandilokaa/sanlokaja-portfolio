@@ -49,7 +49,7 @@ const MyService = () => {
                 <Col xs={12} xl={8}>
                     <h1>MY AWESOME</h1>
                 </Col>
-                <Col xs={12} xl={4} className="d-flex justify-content-end">
+                <Col xs={12} xl={4} className="d-flex justify-content-end align-items-center">
                     <div className="round-my-awesome"></div>
                     <div className="round-my-awesome"></div>
                     <div className="round-my-awesome"></div>
