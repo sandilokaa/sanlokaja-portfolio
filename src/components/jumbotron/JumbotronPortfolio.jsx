@@ -54,10 +54,10 @@ const JumbotronPortfolio = () => {
                         style={{
                             backgroundColor: '#D5FF3F',
                             position: 'absolute',
-                            left: window.innerWidth <= 480 ? mousePosition.x - 90 / 2 : mousePosition.x - 180 / 2,
-                            top: window.innerWidth <= 480 ? mousePosition.y - 90 / 2 : mousePosition.y - 180 / 2,
-                            width: window.innerWidth <= 480 ? '90px' : '180px',
-                            height: window.innerWidth <= 480 ? '90px' : '180px',
+                            left: window.innerWidth < 576 ? mousePosition.x - 90 / 2 : mousePosition.x - 180 / 2,
+                            top: window.innerWidth < 576 ? mousePosition.y - 90 / 2 : mousePosition.y - 180 / 2,
+                            width: window.innerWidth < 576 ? '90px' : '180px',
+                            height: window.innerWidth < 576 ? '90px' : '180px',
                             borderRadius: '50%',
                             pointerEvents: 'none',
                             zIndex: '0',
@@ -68,20 +68,20 @@ const JumbotronPortfolio = () => {
                         <Row style={
                             {
                                 fontWeight: '600',
-                                marginTop: window.innerWidth <= 480 ? '10%' : '20%',
-                                marginLeft: window.innerWidth <= 480 ? '55%' : '60%'
+                                marginTop: window.innerWidth < 576 ? '10%' : '20%',
+                                marginLeft: window.innerWidth < 576 ? '55%' : '60%'
                             }}
                         >
                             <Col xs={12} xl={12}>
-                                <Image src={ArrowIcon} style={{ height: window.innerWidth <= 480 ? '10px' : 'auto' }} />
+                                <Image src={ArrowIcon} style={{ height: window.innerWidth < 576 ? '10px' : 'auto' }} />
                             </Col>
                         </Row>
                         <Row style={
                             {
                                 fontWeight: '600',
-                                marginTop: window.innerWidth <= 480 ? '35%' : '40%',
-                                marginLeft: window.innerWidth <= 480 ? '-20%' : '5%',
-                                fontSize: window.innerWidth <= 480 ? '11px' : '18px'
+                                marginTop: window.innerWidth < 576 ? '35%' : '40%',
+                                marginLeft: window.innerWidth < 576 ? '-20%' : '5%',
+                                fontSize: window.innerWidth < 576 ? '11px' : '18px'
                             }}
                         >
                             <Col xs={12} xl={12}>

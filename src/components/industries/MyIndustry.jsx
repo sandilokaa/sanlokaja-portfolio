@@ -30,14 +30,14 @@ const MyIndustry = () => {
                 </Col>
             </Row>
             <Row className="industry-type">
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                     <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
                 </Col>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                 <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
                 
                 </Col>
-                <Col xs={12} xl={4}>
+                <Col xs={12} xl={4} className="mt-4">
                 <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
                 
                 </Col>

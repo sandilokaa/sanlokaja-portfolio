@@ -1,4 +1,4 @@
-@media only screen and (min-width : 360px) and (max-width : 896px) {
+@media only screen and (max-width : 576px) {
 
     /* ====================================================== */
 
@@ -38,7 +38,7 @@
     }
 
     #header-my-portfolio h4{
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
     }
     
@@ -47,7 +47,7 @@
     }
     
     #header-my-portfolio .row-header-title p{
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     
     #header-my-portfolio .row-header-title img{
@@ -55,12 +55,12 @@
     }
     
     #header-my-portfolio .row-header-title-2 p{
-        font-size: 36px;
+        font-size: 2.25rem;
         margin: 0 0 2% 0;
     }
     
     #header-my-portfolio .row-header-greeting p{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #header-my-portfolio .row-header-greeting .header-complete-projects,
@@ -68,12 +68,9 @@
         margin: 8% 0 0;
     }
     
-    #header-my-portfolio .row-header-greeting .header-complete-projects h3{
-        font-size: 32px;
-    }
-    
+    #header-my-portfolio .row-header-greeting .header-complete-projects h3,
     #header-my-portfolio .row-header-greeting .header-years-experience h3{
-        font-size: 32px;
+        font-size: 2rem;
     }
     
     #header-my-portfolio .row-header-button{
@@ -87,11 +84,11 @@
     
     #header-my-portfolio .row-header-button button{
         margin-bottom: 4%;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     #header-my-portfolio .row-header-button img{
-        width: 14px;
+        width: 0.875rem;
         margin-right: 5px !important;
     }
 
@@ -134,7 +131,7 @@
         height: 65px;
     }
     #marquee-tech-stack .my-tech-stack span{
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: var(--title-font);
         margin-right: 25px;
         color: #D5FF3F;
@@ -161,7 +158,7 @@
     }
 
     #my-service h1{
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 
     #my-service .round-my-awesome{
@@ -178,7 +175,7 @@
 
     #my-service p{
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 1rem;
         margin-top: 2.2%;
     }
 
@@ -232,7 +229,7 @@
     #my-service .my-service-detail h4{
         color: #FFFFFF;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 2.125rem;
         margin-bottom: 0;
     }
     
@@ -248,7 +245,7 @@
     
     #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description h5{
         color: #FFFFFF;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         z-index: 999;
     }
@@ -256,7 +253,7 @@
     #my-service .my-service-detail .my-service-detail-tech .my-service-detail-tech-description p{
         margin-top: 0;
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         z-index: 999;
     }
@@ -289,7 +286,7 @@
     }
 
     #best-project-content h1{
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     #best-project-content .round-best-project{
@@ -298,7 +295,7 @@
     }
 
     #best-project-content p{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #best-project-content .container > .row:nth-child(2){
@@ -321,10 +318,6 @@
         left: 0;
         transform: translate(-180%);
     }
-    
-    #best-project-content .overlay-content > .row:nth-child(2){
-        margin-top: 50% !important;
-    }
 
     /* ---------- End Best Project ---------- */
 
@@ -340,7 +333,7 @@
     }
 
     #motivated-content h1{
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     #motivated-content .btn-motivated-contact:hover{
@@ -364,6 +357,79 @@
 
     /* ====================================================== */
 
+    /* ---------- Case Study Content ---------- */
+
+    #case-study{
+        padding: 12% 0 0;
+    }
+
+    #case-study .container > .row:nth-child(1) h1{
+        font-size: 2rem;
+    }
+
+    #case-study .case-study-description{
+        margin-top: 6%;
+        flex-direction: column-reverse;
+    }
+
+    #case-study .case-study-description .btn-case-study{
+        margin-top: 8%;
+        padding: 4% 0;
+    }
+
+    #case-study .case-study-description .btn-case-study:hover{
+        padding: 6%;
+    }
+
+    #case-study .case-study-description p{
+        font-size: 1.125rem;
+    }
+
+    #case-study .case-study-description .cs-short-description .description-two {
+        margin-top: 14%;
+    }
+
+    #case-study .cs-workflow{
+        margin-top: 8%;
+    }
+
+    #case-study .cs-workflow p{
+        font-size: 1.125rem;
+    }
+
+    /* ---------- End Case Study Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
+    /* ---------- My Industry Content ---------- */
+
+    #my-industry{
+        padding: 12% 0 0;
+    }
+
+    #my-industry .industry-head-title-one p{
+        color: #FFFFFF;
+    }
+
+    #my-industry .industry-head-title-two p{
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    #my-industry .industry-type{
+        margin-top: 2%;
+    }
+
+    /* ---------- End My Industry Content ---------- */
+
+    /* ====================================================== */
+
+
+    /* ====================================================== */
+
     /* ---------- FAQ Content ---------- */
 
     #faq-content{
@@ -371,44 +437,16 @@
     }
 
     #faq-content h1{
-        font-size: 36px;
-        font-family: var(--title-font);
-        color: #FFFFFF;
+        font-size: 2.125rem;
         line-height: 50px;
-        margin: auto 0;
     }
 
     #faq-content .wrapper .question-container {
-        width: 100%;
-        text-align: left;
-        padding: 20px 10px;
-        font-weight: 600;
-        font-size: 18px;
-        color: #FFFFFF;
-        background: transparent;
-        border: none;
-        cursor: pointer;
+        font-size: 1.125rem;
     }
 
     #faq-content .wrapper .arrow {
         font-size: 30px;
-    }
-
-    #faq-content .arrow.active {
-        rotate: 180deg;
-        color: #FFFFFF;
-    }
-
-    #faq-content .wrapper .answer-container {
-        padding: 0 10px;
-        transition: height .7s ease-in-out;
-        margin-bottom: 2%;
-    }
-
-    #faq-content .wrapper .answer-content {
-        padding: 12px 0;
-        font-size: 16px;
-        color: #FFFFFF;
     }
 
     /* ---------- End FAQ Content ---------- */
