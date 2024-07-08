@@ -4,8 +4,12 @@ import {
     Row,
     Col,
     Container,
+    Image
 } from "react-bootstrap";
 
+import ArrowImage from "../../assets/images/icons/arrow.svg";
+
+import { IndustryData } from "../../assets/js/industryData";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
@@ -30,25 +34,33 @@ const MyIndustry = () => {
                 </Col>
             </Row>
             <Row className="industry-type">
-                <Col xs={12} xl={4} className="mt-4">
-                    <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
-                </Col>
-                <Col xs={12} xl={4} className="mt-4">
-                <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
-                
-                </Col>
-                <Col xs={12} xl={4} className="mt-4">
-                <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
-                
-                </Col>
-                <Col xs={12} xl={4} className="mt-4">
-                <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
-                
-                </Col>
-                <Col xs={12} xl={4} className="mt-4"> 
-                <div style={{height: '320px', width: '100%', background: '#292929'}}></div>
-                
-                </Col>
+                {IndustryData.Collections.map((industry) => {
+                    return (
+                        <Col xs={12} xl={4} className="mt-4" key={industry.id}>
+                            <div className="type-wrapper">
+                                <Row>
+                                    <Col xs={10} xl={10}>
+                                        <h1>{industry.properties.title}</h1>
+                                    </Col>
+                                    <Col xs={2} xl={2} className="d-flex justify-content-end align-items-center">
+                                        <Image src={ArrowImage}
+                                            style={{
+                                                filter: 'brightness(0) invert(1)',
+                                                zIndex: '999',
+                                                width: '15px',
+                                                height: '15px'
+                                            }} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs={12} xl={12}>
+                                        <p>{industry.properties.description}</p>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Col>
+                    )
+                })}
             </Row>
         </Container>
 

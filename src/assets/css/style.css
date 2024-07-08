@@ -688,6 +688,29 @@ html, body{
     margin-top: 2%;
 }
 
+#my-industry .industry-type .type-wrapper{
+    height: 300px;
+    width: 100%;
+    background-color: #292929;
+    padding: 6%;
+}
+
+#my-industry .industry-type .type-wrapper h1{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin: auto 0;
+}
+
+#my-industry .industry-type .type-wrapper > .row:nth-child(2){
+    top: 60%;
+}
+
+#my-industry .industry-type .type-wrapper p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: auto 0;
+}
+
 /* ---------- End My Industry Content ---------- */
 
 /* ====================================================== */
