@@ -21,10 +21,11 @@ const Workflow = () => {
                         <Col xs={12} xl={3} key={workflow.id} style={{marginRight: '2%', marginTop: window.innerWidth < 896 ? '4%' : null}}>
                             <p>{workflow.type}</p>
                             <Row className="mt-3">
-                                {workflow.properties.map((detail) => {
+                                {workflow.properties.map((detail, index) => {
+                                    const marginLeft = index * 10;
                                     return (
                                         <Col xs={12} xl={12} key={detail.id} className="mt-2">
-                                            <p style={{ background: '#292929', textAlign: 'center', borderRadius: '40px', padding: '3%', fontSize: '16px' }}>{detail.title}</p>
+                                            <p style={{ background: '#292929', textAlign: 'center', borderRadius: '40px', padding: '3%', fontSize: '16px', width: '100%', marginLeft: window.innerWidth < 896 ? '0' :`${marginLeft}%` }}>{detail.title}</p>
                                         </Col>
                                     )
                                 })}

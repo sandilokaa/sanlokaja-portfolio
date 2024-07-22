@@ -25,8 +25,10 @@ const MyMarquee = () => {
                 <MarqueeTechStack myTechStack="SEQUELIZE" />
                 <MarqueeTechStack myTechStack="POSTMAN" />
                 <MarqueeTechStack myTechStack="JEST" />
-                <MarqueeTechStack myTechStack="NUXTJS" />
+                <MarqueeTechStack myTechStack="NEXTJS" />
                 <MarqueeTechStack myTechStack="TAILWIND" />
+                <MarqueeTechStack myTechStack="PRISMA" />
+                <MarqueeTechStack myTechStack="TYPESCRIPT" />
             </Marquee>
         </div>
 

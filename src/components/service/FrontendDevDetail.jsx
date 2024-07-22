@@ -86,7 +86,7 @@ const FrontendDevService = () => {
                 </Col>
                 <Col xs={6} xl={3}>
                     <Button>
-                        NuxtJs
+                        NextJs
                     </Button>
                 </Col>
                 <Col xs={6} xl={3}>
@@ -157,11 +157,11 @@ const FrontendDevService = () => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <Col xs={12} xl={3}>
-                            <h5>NuxtJs</h5>
+                            <h5>NextJs</h5>
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                Nuxt.js on the frontend enables fast, efficient, and scalable web app 
+                                NextJs on the frontend enables fast, efficient, and scalable web app 
                                 development with SSR, automatic routing, code splitting, middleware, 
                                 plugins, and comprehensive documentation.
                             </p>

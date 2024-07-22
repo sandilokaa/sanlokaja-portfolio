@@ -662,6 +662,41 @@ html, body{
     margin: auto 0;
 }
 
+.parallax {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.parallax > * {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #292929, #292929);
+    background-size: 200% 200%;
+    animation: parallaxBg 10s ease infinite;
+    z-index: 0;
+}
+
+@keyframes parallaxBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* ---------- End Case Study Content ---------- */
 
 /* ====================================================== */

@@ -16,7 +16,7 @@ export const AccordionData = {
             properties:
             {
                 question: "What technologies do you use for website development?",
-                answer: "For frontend, I use HTML, CSS, JavaScript, React, NuxtJS. For backend, I use Node.js, Python (Flask), and Golang. As a fullstack developer, I integrate both sides with tools like Git and Docker."
+                answer: "For frontend, I use HTML, CSS, JavaScript, React, NextJs. For backend, I use Node.js, Python (Flask), and Golang. As a fullstack developer, I integrate both sides with tools like Git and Docker."
             }
         },
         {
