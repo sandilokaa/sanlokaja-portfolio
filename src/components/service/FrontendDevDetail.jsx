@@ -5,6 +5,7 @@ import {
     Image,
     Button
 } from "react-bootstrap";
+import { useSpring, animated } from "@react-spring/web";
 
 import ArrowIcon from "../../assets/images/icons/arrow.svg";
 import ReactJSImage from "../../assets/images/services/reactjs-image.png";
@@ -17,17 +18,24 @@ import "../../assets/css/responsive.css";
 
 const FrontendDevService = () => {
 
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
     const [isHovered3, setIsHovered3] = useState(false);
     const [isHovered4, setIsHovered4] = useState(false);
 
+    const [{ x, y, opacity }, api] = useSpring(() => ({
+        x: 0,
+        y: 0,
+        opacity: 0,
+        config: { tension: 200, friction: 20 },
+    }));
+
     const handleMouseMove1 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(true);
         setIsHovered2(false);
         setIsHovered3(false);
@@ -36,9 +44,10 @@ const FrontendDevService = () => {
 
     const handleMouseMove2 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(false);
         setIsHovered2(true);
         setIsHovered3(false);
@@ -47,9 +56,10 @@ const FrontendDevService = () => {
 
     const handleMouseMove3 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(false);
         setIsHovered2(false);
         setIsHovered3(true);
@@ -58,9 +68,10 @@ const FrontendDevService = () => {
 
     const handleMouseMove4 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(false);
         setIsHovered2(false);
         setIsHovered3(false);
@@ -68,6 +79,7 @@ const FrontendDevService = () => {
     };
 
     const handleMouseLeave = () => {
+        api.start({ opacity: 0 });
         setIsHovered1(false);
         setIsHovered2(false);
         setIsHovered3(false);
@@ -113,8 +125,8 @@ const FrontendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                ReactJS facilitates creating interactive, responsive UIs with good performance, 
-                                backed by major companies, thanks to its component-based approach, 
+                                ReactJS facilitates creating interactive, responsive UIs with good performance,
+                                backed by major companies, thanks to its component-based approach,
                                 Virtual DOM, JSX, and strong community support.
                             </p>
                         </Col>
@@ -129,29 +141,32 @@ const FrontendDevService = () => {
                             />
                         </Col>
                         {isHovered1 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${ReactJSImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 
                     <hr />
 
-                    <Row 
+                    <Row
                         className="my-service-detail-tech-description"
                         onMouseMove={handleMouseMove2}
                         onMouseLeave={handleMouseLeave}
@@ -161,8 +176,8 @@ const FrontendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                NextJs on the frontend enables fast, efficient, and scalable web app 
-                                development with SSR, automatic routing, code splitting, middleware, 
+                                NextJs on the frontend enables fast, efficient, and scalable web app
+                                development with SSR, automatic routing, code splitting, middleware,
                                 plugins, and comprehensive documentation.
                             </p>
                         </Col>
@@ -177,29 +192,32 @@ const FrontendDevService = () => {
                             />
                         </Col>
                         {isHovered2 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${NuxtJSImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 
                     <hr />
 
-                    <Row 
+                    <Row
                         className="my-service-detail-tech-description"
                         onMouseMove={handleMouseMove3}
                         onMouseLeave={handleMouseLeave}
@@ -209,8 +227,8 @@ const FrontendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                Tailwind CSS on the frontend facilitates fast, responsive UI development 
-                                with its utility-first approach, easy configuration, and rich ecosystem, 
+                                Tailwind CSS on the frontend facilitates fast, responsive UI development
+                                with its utility-first approach, easy configuration, and rich ecosystem,
                                 eliminating the need for custom CSS.
                             </p>
                         </Col>
@@ -225,29 +243,32 @@ const FrontendDevService = () => {
                             />
                         </Col>
                         {isHovered3 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${TailwindImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 
                     <hr />
 
-                    <Row 
+                    <Row
                         className="my-service-detail-tech-description"
                         onMouseMove={handleMouseMove4}
                         onMouseLeave={handleMouseLeave}
@@ -257,8 +278,8 @@ const FrontendDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                HTML5 and CSS3 empower modern, responsive, and dynamic UI development 
-                                with features like multimedia elements, gradients, animations, 
+                                HTML5 and CSS3 empower modern, responsive, and dynamic UI development
+                                with features like multimedia elements, gradients, animations,
                                 and responsive design, enhancing user experiences on the web.
                             </p>
                         </Col>
@@ -273,23 +294,26 @@ const FrontendDevService = () => {
                             />
                         </Col>
                         {isHovered4 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${CSSImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 

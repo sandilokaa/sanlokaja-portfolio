@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
 import {
     Row,
     Col,
@@ -16,16 +17,23 @@ import "../../assets/css/responsive.css";
 
 const FullstackDevService = () => {
 
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered1, setIsHovered1] = useState(false);
     const [isHovered2, setIsHovered2] = useState(false);
     const [isHovered3, setIsHovered3] = useState(false);
 
+    const [{ x, y, opacity }, api] = useSpring(() => ({
+        x: 0,
+        y: 0,
+        opacity: 0,
+        config: { tension: 200, friction: 20 },
+    }));
+
     const handleMouseMove1 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(true);
         setIsHovered2(false);
         setIsHovered3(false);
@@ -33,9 +41,10 @@ const FullstackDevService = () => {
 
     const handleMouseMove2 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(false);
         setIsHovered2(true);
         setIsHovered3(false);
@@ -43,15 +52,17 @@ const FullstackDevService = () => {
 
     const handleMouseMove3 = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left; 
-        const mouseY = event.clientY - rect.top; 
-        setMousePosition({ x: mouseX, y: mouseY });
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered1(false);
         setIsHovered2(false);
         setIsHovered3(true);
     };
 
     const handleMouseLeave = () => {
+        api.start({ opacity: 0 });
         setIsHovered1(false);
         setIsHovered2(false);
         setIsHovered3(false);
@@ -92,8 +103,8 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The frontend development process includes requirement analysis, UI design, 
-                                technology selection, coding, and testing. Frontend developers work with 
+                                The frontend development process includes requirement analysis, UI design,
+                                technology selection, coding, and testing. Frontend developers work with
                                 UI/UX designers to high-performing user interfaces.
                             </p>
                         </Col>
@@ -108,29 +119,32 @@ const FullstackDevService = () => {
                             />
                         </Col>
                         {isHovered1 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${FrontEndImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 
                     <hr />
 
-                    <Row 
+                    <Row
                         className="my-service-detail-tech-description"
                         onMouseMove={handleMouseMove2}
                         onMouseLeave={handleMouseLeave}
@@ -140,9 +154,9 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                Backend development includes requirement analysis, architecture planning, 
-                                API development, testing, optimization, and maintenance, 
-                                ensuring performance, security, and scalability. 
+                                Backend development includes requirement analysis, architecture planning,
+                                API development, testing, optimization, and maintenance,
+                                ensuring performance, security, and scalability.
                             </p>
                         </Col>
                         <Col xs={2} xl={1}>
@@ -156,29 +170,32 @@ const FullstackDevService = () => {
                             />
                         </Col>
                         {isHovered2 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${BackEndImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 
                     <hr />
 
-                    <Row 
+                    <Row
                         className="my-service-detail-tech-description"
                         onMouseMove={handleMouseMove3}
                         onMouseLeave={handleMouseLeave}
@@ -188,8 +205,8 @@ const FullstackDevService = () => {
                         </Col>
                         <Col xs={10} xl={8}>
                             <p>
-                                The UI/UX design process includes user research, personas, wireframing, 
-                                visual design, prototyping, user testing, implementation, and maintenance, 
+                                The UI/UX design process includes user research, personas, wireframing,
+                                visual design, prototyping, user testing, implementation, and maintenance,
                                 focusing on optimal user experiences.
                             </p>
                         </Col>
@@ -204,23 +221,26 @@ const FullstackDevService = () => {
                             />
                         </Col>
                         {isHovered3 && (
-                            <div
+                            <animated.div
                                 className="mouse-follower"
                                 style={{
                                     backgroundImage: `url(${UIUXImage})`,
-                                    position: 'absolute',
-                                    left: mousePosition.x - 140/2,
-                                    top: mousePosition.y - 140/2,
-                                    width: '140px',
-                                    height: '140px',
-                                    borderRadius: '50%',
-                                    backgroundColor: 'blue',
-                                    pointerEvents: 'none',
-                                    zIndex: '0',
-                                    animation: 'grow 0.4s forwards',
-                                    transition: 'left 0.1s, top 0.1s'
+                                    position: "absolute",
+                                    left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                                    width: window.innerWidth < 576 ? "90px" : "140px",
+                                    height: window.innerWidth < 576 ? "90px" : "140px",
+                                    backgroundColor: "#101010",
+                                    borderRadius: "50%",
+                                    pointerEvents: "none",
+                                    zIndex: "10",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    opacity,
+                                    cursor: 'pointer'
                                 }}
-                            ></div>
+                            />
                         )}
                     </Row>
 

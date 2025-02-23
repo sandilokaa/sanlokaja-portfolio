@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
 import {
     Row,
     Col,
@@ -14,87 +15,89 @@ import "../../assets/css/responsive.css";
 
 const JumbotronPortfolio = () => {
 
-    /* ---------- Mouse Follower ----------*/
-
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered, setIsHovered] = useState(false);
+
+    const [{ x, y, opacity }, api] = useSpring(() => ({
+        x: 0,
+        y: 0,
+        opacity: 0,
+        config: { tension: 200, friction: 20 },
+    }));
 
     const handleMouseMove = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
         const mouseX = event.clientX - rect.left;
         const mouseY = event.clientY - rect.top;
-        setMousePosition({ x: mouseX, y: mouseY });
+
+        api.start({ x: mouseX, y: mouseY, opacity: 1 });
         setIsHovered(true);
     };
 
     const handleMouseLeave = () => {
+        api.start({ opacity: 0 });
         setIsHovered(false);
     };
 
-    /* ---------- End Mouse Follower ----------*/
+    /* ---------- End Mouse Follower ---------- */
 
     const handleGetRepository = () => {
-        window.open(`https://www.github.com/sandilokaa`, '_blank');
+        window.open(`https://www.github.com/sandilokaa`, "_blank");
     };
 
     return (
-
         <Container>
             <Row
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleGetRepository}
+                style={{ position: "relative" }}
             >
                 <Col xs={12} xl={12}>
-                    <Image src={JumbotronImage} style={{ width: '100%', height: 'auto' }} />
+                    <Image src={JumbotronImage} style={{ width: "100%", height: "auto" }} />
                 </Col>
                 {isHovered && (
-                    <div
+                    <animated.div
                         className="mouse-follower"
                         style={{
-                            backgroundColor: '#D5FF3F',
-                            position: 'absolute',
-                            left: window.innerWidth < 576 ? mousePosition.x - 90 / 2 : mousePosition.x - 180 / 2,
-                            top: window.innerWidth < 576 ? mousePosition.y - 90 / 2 : mousePosition.y - 180 / 2,
-                            width: window.innerWidth < 576 ? '90px' : '180px',
-                            height: window.innerWidth < 576 ? '90px' : '180px',
-                            borderRadius: '50%',
-                            pointerEvents: 'none',
-                            zIndex: '0',
-                            animation: 'grow 0.4s forwards',
-                            transition: 'left 0.1s, top 0.1s'
+                            position: "absolute",
+                            left: x.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                            top: y.to((val) => `${val - (window.innerWidth < 576 ? 45 : 90)}px`),
+                            width: window.innerWidth < 576 ? "90px" : "180px",
+                            height: window.innerWidth < 576 ? "90px" : "180px",
+                            backgroundColor: "#101010",
+                            borderRadius: "50%",
+                            pointerEvents: "none",
+                            zIndex: "10",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            opacity,
+                            cursor: 'pointer'
                         }}
                     >
-                        <Row style={
-                            {
-                                fontWeight: '600',
-                                marginTop: window.innerWidth < 576 ? '10%' : '20%',
-                                marginLeft: window.innerWidth < 576 ? '55%' : '60%'
-                            }}
-                        >
-                            <Col xs={12} xl={12}>
-                                <Image src={ArrowIcon} style={{ height: window.innerWidth < 576 ? '10px' : 'auto' }} />
-                            </Col>
-                        </Row>
-                        <Row style={
-                            {
-                                fontWeight: '600',
-                                marginTop: window.innerWidth < 576 ? '35%' : '40%',
-                                marginLeft: window.innerWidth < 576 ? '-20%' : '5%',
-                                fontSize: window.innerWidth < 576 ? '11px' : '18px'
-                            }}
-                        >
-                            <Col xs={12} xl={12}>
-                                <p>My Github</p>
-                            </Col>
-                        </Row>
-                    </div>
+                        <div className="d-flex flex-column">
+                            <Row style={{ fontWeight: "600", marginLeft: '80px', marginTop: '10px' }}>
+                                <Col xs={12} xl={12}>
+                                    <Image src={ArrowIcon} style={{ height: window.innerWidth < 576 ? "10px" : "auto", filter: 'brightness(0) invert(1)' }} />
+                                </Col>
+                            </Row>
+                            <Row
+                                style={{
+                                    fontWeight: "600",
+                                    marginTop: "60px",
+                                    fontSize: window.innerWidth < 576 ? "11px" : "18px",
+                                }}
+                            >
+                                <Col xs={12} xl={12}>
+                                    <p className="text-white">My Github</p>
+                                </Col>
+                            </Row>
+                        </div>
+                    </animated.div>
                 )}
             </Row>
         </Container>
-
     );
-
 };
 
 export default JumbotronPortfolio;
