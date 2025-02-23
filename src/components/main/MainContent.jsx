@@ -26,7 +26,7 @@ const MainContent = () => {
 
         <Container>
             <div style={{ position: 'relative' }}>
-                <div style={{ width: '100%', height: 'auto', position: 'absolute', top: 0, zIndex: 1 }}>
+                <div style={{ width: '100%', height: 'auto', position: 'relative', top: 0, zIndex: 0 }}>
                     <div>
                         <h4>INTROODUCING</h4>
                         <div>
@@ -91,7 +91,7 @@ const MainContent = () => {
                         />
                     </div>
                 </div>
-                <div style={{ width: '100%', height: '100vh', position: 'relative', zIndex: 0 }}>
+                <div style={{ top: '0', width: '100%', height: '100vh', position: 'absolute', zIndex: 1 }}>
                     <Particles
                         particleColors={['#ffffff', '#ffffff']}
                         particleCount={200}
