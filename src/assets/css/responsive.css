@@ -18,9 +18,10 @@
 
     .navbar-expand-xl .navbar-nav .nav-link {
         width: 100%;
-        background-color: #D5FF3F;
+        background-color: #101010;
         margin-left: 0;
         padding-left: 12px;
+        color: #FFFFFF;
     }
 
     /* ---------- End Navbar ---------- */
