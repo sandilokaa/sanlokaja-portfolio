@@ -90,7 +90,7 @@ const BestProject = () => {
 
                         <Col xs={12} xl={bestProject.id === 2 ? 8 : 4} className="mt-4" key={bestProject.id}>
                             <div className="overlay-container" style={{ borderRadius: bestProject.id === 5 ? '0 0 30% 0' : '0' }}>
-                                <Image src={bestProject.image} style={{ width: '100%', height: '100%' }} loading="lazy"/>
+                                <Image src={bestProject.image} style={{ width: '100%', height: '100%', filter: 'grayscale(100%)' }} loading="lazy"/>
                                 <div className="overlay">
                                     <div className="overlay-content">
                                         <Row>

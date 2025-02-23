@@ -92,61 +92,10 @@
         margin-right: 5px !important;
     }
 
-    #header-my-portfolio .header-big-image{
-        margin: 16% 0 0;
-    }
-    
-    #header-my-portfolio .header-big-image img{
-        border-radius: 40px 40px 0 0;
-    }
-    
-    #header-my-portfolio .header-big-image .header-round-arrow{
-        height: 75px;
-        width: 75px;
-        left: 10%;
-        top: -16%;
-        border-radius: 50%;
-    }
-    
-    #header-my-portfolio .header-big-image .header-round-arrow-inside{
-        height: 70px;
-        width: 70px;
-    }
-    
-    #header-my-portfolio .header-big-image .header-round-arrow-inside img{
-        width: 35px;
-    }
-
     /* ---------- End Header ---------- */
 
     /* ====================================================== */
 
-
-
-    /* ====================================================== */
-
-    /* ---------- Marquee Tech Stack ---------- */
-
-    #marquee-tech-stack{
-        height: 65px;
-    }
-    #marquee-tech-stack .my-tech-stack span{
-        font-size: 1.5rem;
-        font-family: var(--title-font);
-        margin-right: 25px;
-        color: #D5FF3F;
-    }
-    
-    #marquee-tech-stack .my-tech-stack .rounded-element{
-        height: 14px;
-        width: 14px;
-        margin-right: 25px;
-    }
-    
-
-    /* ---------- End Marquee Tech Stack ---------- */
-
-    /* ====================================================== */
 
     /* ====================================================== */
 
@@ -423,24 +372,24 @@
         margin-top: 2%;
     }
 
-    #my-industry .industry-type .type-wrapper{
+    #my-industry .industry-type .card-spotlight{
         height: 300px;
         width: 100%;
         background-color: #292929;
         padding: 6%;
     }
     
-    #my-industry .industry-type .type-wrapper h1{
+    #my-industry .industry-type .card-spotlight h1{
         font-size: 1.25rem;
         color: #FFFFFF;
         margin: auto 0;
     }
     
-    #my-industry .industry-type .type-wrapper > .row:nth-child(2){
+    #my-industry .industry-type .card-spotlight > .row:nth-child(2){
         top: 50%;
     }
     
-    #my-industry .industry-type .type-wrapper p{
+    #my-industry .industry-type .card-spotlight p{
         font-size: 1rem;
         color: #FFFFFF;
         margin: auto 0;

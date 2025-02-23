@@ -6,6 +6,8 @@ import {
     Container,
     Image
 } from "react-bootstrap";
+import SpotlightCard from "../common/SpotlightCard";
+
 
 import ArrowImage from "../../assets/images/icons/arrow.svg";
 
@@ -37,7 +39,7 @@ const MyIndustry = () => {
                 {IndustryData.Collections.map((industry) => {
                     return (
                         <Col xs={12} xl={4} className="mt-4" key={industry.id}>
-                            <div className="type-wrapper">
+                            <SpotlightCard>
                                 <Row>
                                     <Col xs={10} xl={10}>
                                         <h1>{industry.properties.title}</h1>
@@ -57,7 +59,7 @@ const MyIndustry = () => {
                                         <p>{industry.properties.description}</p>
                                     </Col>
                                 </Row>
-                            </div>
+                            </SpotlightCard>
                         </Col>
                     )
                 })}

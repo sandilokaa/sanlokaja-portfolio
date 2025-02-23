@@ -6956,6 +6956,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.12.7":
+  version: 3.12.7
+  resolution: "gsap@npm:3.12.7"
+  checksum: 15f5da56d02f04be8eb4b58cb733fbd71619647608c0854717697da8b1922a5ce4ea5487cba0c66f428aa645247e143e462bec885f8470725c2c9ab393247e25
+  languageName: node
+  linkType: hard
+
 "gzip-size@npm:^6.0.0":
   version: 6.0.0
   resolution: "gzip-size@npm:6.0.0"
@@ -9625,6 +9632,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ogl@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "ogl@npm:1.0.11"
+  checksum: 00c596ea6755dfb1236f0b754c4434fff01873c0677230a24b6ffe9f31d5ca27ea3bc6363a140c827510327f7c2e823b0711f40cb52864182b58bea95806db4e
+  languageName: node
+  linkType: hard
+
 "on-finished@npm:2.4.1":
   version: 2.4.1
   resolution: "on-finished@npm:2.4.1"
@@ -11699,6 +11713,8 @@ __metadata:
     "@testing-library/user-event": ^13.2.1
     bootstrap: ^5.3.2
     bootstrap-icons: ^1.11.3
+    gsap: ^3.12.7
+    ogl: ^1.0.11
     react: ^18.2.0
     react-bootstrap: ^2.10.0
     react-dom: ^18.2.0

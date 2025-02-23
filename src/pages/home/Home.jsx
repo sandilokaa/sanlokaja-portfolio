@@ -5,7 +5,6 @@ import MainContent from "../../components/main/MainContent";
 import BestProject from "../../components/portfolio/BestProject";
 import JumbotronPortfolio from "../../components/jumbotron/JumbotronPortfolio";
 import MyService from "../../components/service/MyService";
-import MyMarquee from "../../components/marquee/MyMarquee";
 import MyMotivated from "../../components/motivated/MyMotivated";
 import CaseStudy from "../../components/studies/CaseStudy";
 import MyIndustry from "../../components/industries/MyIndustry";
@@ -22,10 +21,6 @@ const Home = () => {
 
             <div id="header-my-portfolio">
                 <MainContent/>
-            </div>
-
-            <div id="marquee-tech-stack">
-                <MyMarquee/>
             </div>
 
             <div id="my-service">

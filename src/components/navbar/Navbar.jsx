@@ -9,7 +9,7 @@ import {
 
 import ContactModal from "../modal/ContactModal";
 
-import LogoPortfolio from "../../assets/images/logos/logo-portfolio.png";
+import LogoPortfolio from "../../assets/images/logos/logo.svg";
 
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";

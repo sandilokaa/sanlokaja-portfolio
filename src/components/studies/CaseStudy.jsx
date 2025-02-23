@@ -33,7 +33,8 @@ const CaseStudy = () => {
                             <Image
                                 src={ArrowIcon}
                                 style={{
-                                    marginLeft: '15px'
+                                    marginLeft: '15px',
+                                    filter: 'brightness(0) invert(1)'
                                 }}
                             />
                         </Button>
